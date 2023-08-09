@@ -6,11 +6,11 @@ let text1 = document.querySelector('.window_map-a1')
 
 
 elem1.addEventListener('mouseover', function () {
-    text1.classList.add("window_map-light");
+    text1.classList.add("main_Map-light");
 })
 
 elem1.addEventListener('mouseleave', function () {
-    text1.classList.remove("window_map-light");
+    text1.classList.remove("main_Map-light");
 })
 
 
@@ -22,11 +22,11 @@ let text2 = document.querySelector('.window_map-a2')
 
 
 elem2.addEventListener('mouseover', function () {
-    text2.classList.add("window_map-light");
+    text2.classList.add("main_Map-light");
 })
 
 elem2.addEventListener('mouseleave', function () {
-    text2.classList.remove("window_map-light");
+    text2.classList.remove("main_Map-light");
 })
 
 /*Европа*/
@@ -37,11 +37,11 @@ let text3 = document.querySelector('.window_map-a3')
 
 
 elem3.addEventListener('mouseover', function () {
-    text3.classList.add("window_map-light");
+    text3.classList.add("main_Map-light");
 })
 
 elem3.addEventListener('mouseleave', function () {
-    text3.classList.remove("window_map-light");
+    text3.classList.remove("main_Map-light");
 })
 
 /*Африка*/
@@ -52,11 +52,11 @@ let text4 = document.querySelector('.window_map-a4')
 
 
 elem4.addEventListener('mouseover', function () {
-    text4.classList.add("window_map-light");
+    text4.classList.add("main_Map-light");
 })
 
 elem4.addEventListener('mouseleave', function () {
-    text4.classList.remove("window_map-light");
+    text4.classList.remove("main_Map-light");
 })
 
 /*Россия*/
@@ -67,11 +67,11 @@ let text5 = document.querySelector('.window_map-a5')
 
 
 elem5.addEventListener('mouseover', function () {
-    text5.classList.add("window_map-light");
+    text5.classList.add("main_Map-light");
 })
 
 elem5.addEventListener('mouseleave', function () {
-    text5.classList.remove("window_map-light");
+    text5.classList.remove("main_Map-light");
 })
 
 /*Китай*/
@@ -82,11 +82,11 @@ let text6 = document.querySelector('.window_map-a6')
 
 
 elem6.addEventListener('mouseover', function () {
-    text6.classList.add("window_map-light");
+    text6.classList.add("main_Map-light");
 })
 
 elem6.addEventListener('mouseleave', function () {
-    text6.classList.remove("window_map-light");
+    text6.classList.remove("main_Map-light");
 })
 
 /*Корея*/
@@ -97,11 +97,11 @@ let text7 = document.querySelector('.window_map-a7')
 
 
 elem7.addEventListener('mouseover', function () {
-    text7.classList.add("window_map-light");
+    text7.classList.add("main_Map-light");
 })
 
 elem7.addEventListener('mouseleave', function () {
-    text7.classList.remove("window_map-light");
+    text7.classList.remove("main_Map-light");
 })
 
 /*Япония*/
@@ -112,9 +112,9 @@ let text8 = document.querySelector('.window_map-a8')
 
 
 elem8.addEventListener('mouseover', function () {
-    text8.classList.add("window_map-light");
+    text8.classList.add("main_Map-light");
 })
 
 elem8.addEventListener('mouseleave', function () {
-    text8.classList.remove("window_map-light");
+    text8.classList.remove("main_Map-light");
 })
