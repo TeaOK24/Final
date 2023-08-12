@@ -1,3 +1,5 @@
+/*Карта мира*/
+
 /*США*/
 let elem1 = document.querySelector('.window_map-USA')
 let text1 = document.querySelector('.window_map-a1')
@@ -118,3 +120,63 @@ elem8.addEventListener('mouseover', function () {
 elem8.addEventListener('mouseleave', function () {
     text8.classList.remove("main_Map-light");
 })
+
+
+/*Ссылки на главной странице на еду*/
+
+/*Первая еда*/
+let cuisine1 = document.querySelector('.firstcuisine')
+let maincousine1 = document.querySelector('.main_LinksCousine1')
+
+
+cuisine1.addEventListener('click', function () {
+    maincousine1.classList.toggle('main_LinksCousineNone')
+    maincousine2.classList.add('main_LinksCousineNone')
+    maincousine3.classList.add('main_LinksCousineNone')
+    maincousine4.classList.add('main_LinksCousineNone')
+
+})
+
+/*Вторая еда*/
+let cuisine2 = document.querySelector('.secondcuisine')
+let maincousine2 = document.querySelector('.main_LinksCousine2')
+
+
+cuisine2.addEventListener('click', function () {
+    maincousine1.classList.add('main_LinksCousineNone')
+    maincousine2.classList.toggle('main_LinksCousineNone')
+    maincousine3.classList.add('main_LinksCousineNone')
+    maincousine4.classList.add('main_LinksCousineNone')
+})
+
+/*Третья еда*/
+let cuisine3 = document.querySelector('.thirdcuisine')
+let maincousine3 = document.querySelector('.main_LinksCousine3')
+
+
+cuisine3.addEventListener('click', function () {
+    maincousine1.classList.add('main_LinksCousineNone')
+    maincousine2.classList.add('main_LinksCousineNone')
+    maincousine3.classList.toggle('main_LinksCousineNone')
+    maincousine4.classList.add('main_LinksCousineNone')
+})
+
+/*Четвертая еда*/
+let cuisine4 = document.querySelector('.fourthcuisine')
+let maincousine4 = document.querySelector('.main_LinksCousine4')
+
+
+cuisine4.addEventListener('click', function () {
+    maincousine1.classList.add('main_LinksCousineNone')
+    maincousine2.classList.add('main_LinksCousineNone')
+    maincousine3.classList.add('main_LinksCousineNone')
+    maincousine4.classList.toggle('main_LinksCousineNone')
+})
+
+
+
+/*
+if (document.querySelector(".main_LinksCousine2").classList.contains("main_LinksCousineNone")) {
+    maincousine1.classList.add('main_LinksCousineNone')
+}
+*/
