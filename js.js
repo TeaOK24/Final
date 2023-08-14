@@ -127,13 +127,17 @@ elem8.addEventListener('mouseleave', function () {
 /*Первая еда*/
 let cuisine1 = document.querySelector('.firstcuisine')
 let maincousine1 = document.querySelector('.main_LinksCousine1')
+let cousinetitle = document.querySelector('.main_Linkstitle')
 
 
 cuisine1.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
     maincousine1.classList.toggle('main_LinksCousineNone')
     maincousine2.classList.add('main_LinksCousineNone')
     maincousine3.classList.add('main_LinksCousineNone')
     maincousine4.classList.add('main_LinksCousineNone')
+    maincousine5.classList.add('main_LinksCousineNone')
+    maincousine6.classList.add('main_LinksCousineNone')
 
 })
 
@@ -143,10 +147,13 @@ let maincousine2 = document.querySelector('.main_LinksCousine2')
 
 
 cuisine2.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
     maincousine1.classList.add('main_LinksCousineNone')
     maincousine2.classList.toggle('main_LinksCousineNone')
     maincousine3.classList.add('main_LinksCousineNone')
     maincousine4.classList.add('main_LinksCousineNone')
+    maincousine5.classList.add('main_LinksCousineNone')
+    maincousine6.classList.add('main_LinksCousineNone')
 })
 
 /*Третья еда*/
@@ -155,10 +162,13 @@ let maincousine3 = document.querySelector('.main_LinksCousine3')
 
 
 cuisine3.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
     maincousine1.classList.add('main_LinksCousineNone')
     maincousine2.classList.add('main_LinksCousineNone')
     maincousine3.classList.toggle('main_LinksCousineNone')
     maincousine4.classList.add('main_LinksCousineNone')
+    maincousine5.classList.add('main_LinksCousineNone')
+    maincousine6.classList.add('main_LinksCousineNone')
 })
 
 /*Четвертая еда*/
@@ -167,10 +177,44 @@ let maincousine4 = document.querySelector('.main_LinksCousine4')
 
 
 cuisine4.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
     maincousine1.classList.add('main_LinksCousineNone')
     maincousine2.classList.add('main_LinksCousineNone')
     maincousine3.classList.add('main_LinksCousineNone')
     maincousine4.classList.toggle('main_LinksCousineNone')
+    maincousine5.classList.add('main_LinksCousineNone')
+    maincousine6.classList.add('main_LinksCousineNone')
+})
+
+/*Четвертая еда*/
+let cuisine5 = document.querySelector('.fifthcuisine')
+let maincousine5 = document.querySelector('.main_LinksCousine5')
+
+
+cuisine5.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
+    maincousine1.classList.add('main_LinksCousineNone')
+    maincousine2.classList.add('main_LinksCousineNone')
+    maincousine3.classList.add('main_LinksCousineNone')
+    maincousine4.classList.add('main_LinksCousineNone')
+    maincousine5.classList.toggle('main_LinksCousineNone')
+    maincousine6.classList.add('main_LinksCousineNone')
+
+})
+
+/*Четвертая еда*/
+let cuisine6 = document.querySelector('.sixthcuisine')
+let maincousine6 = document.querySelector('.main_LinksCousine6')
+
+
+cuisine6.addEventListener('click', function () {
+    cousinetitle.classList.add('main_LinksCousineNone')
+    maincousine1.classList.add('main_LinksCousineNone')
+    maincousine2.classList.add('main_LinksCousineNone')
+    maincousine3.classList.add('main_LinksCousineNone')
+    maincousine4.classList.add('main_LinksCousineNone')
+    maincousine5.classList.add('main_LinksCousineNone')
+    maincousine6.classList.toggle('main_LinksCousineNone')
 })
 
 
@@ -180,3 +224,14 @@ if (document.querySelector(".main_LinksCousine2").classList.contains("main_Links
     maincousine1.classList.add('main_LinksCousineNone')
 }
 */
+
+/*Слайдер*/
+
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);

@@ -43,31 +43,31 @@ body {
 
 @keyframes theme {
     0% {
-        background: #4D4D4D;
+        background: #AFE069;
     }
 
     16% {
-        background: #808080;
+        background: #bef574;
     }
 
     33% {
-        background: #737373;
+        background: #CFE6B1;
     }
 
     50% {
-        background: #686868;
+        background: #ADE069;
     }
 
     66% {
-        background: #5E5E5E;
+        background: #87AD51;
     }
 
     83% {
-        background: #555555;
+        background: #86AD51;
     }
 
     100% {
-        background: #4D4D4D;
+        background: #AFE069;
     }
 }
 
