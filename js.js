@@ -228,10 +228,83 @@ if (document.querySelector(".main_LinksCousine2").classList.contains("main_Links
 /*Слайдер*/
 
 var counter = 1;
-setInterval(function(){
+setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
-    if(counter > 4){
+    if (counter > 4) {
         counter = 1;
     }
 }, 5000);
+
+/*Навигация*/
+
+/*Немного о нас*/
+
+let cir1 = document.querySelector('.navigation-btn1')
+let nav1 = document.querySelector('.navigation_a1')
+
+
+cir1.addEventListener('mouseover', function () {
+    nav1.classList.add("navigation_none");
+})
+
+cir1.addEventListener('mouseleave', function () {
+    nav1.classList.remove("navigation_none");
+})
+
+
+/*Фото*/
+
+let cir2 = document.querySelector('.navigation-btn2')
+let nav2 = document.querySelector('.navigation_a2')
+
+
+cir2.addEventListener('mouseover', function () {
+    nav2.classList.add("navigation_none");
+})
+
+cir2.addEventListener('mouseleave', function () {
+    nav2.classList.remove("navigation_none");
+})
+
+/*Популярное*/
+
+let cir3 = document.querySelector('.navigation-btn3')
+let nav3 = document.querySelector('.navigation_a3')
+
+
+cir3.addEventListener('mouseover', function () {
+    nav3.classList.add("navigation_none");
+})
+
+cir3.addEventListener('mouseleave', function () {
+    nav3.classList.remove("navigation_none");
+})
+
+/*Блюда*/
+
+let cir4 = document.querySelector('.navigation-btn4')
+let nav4 = document.querySelector('.navigation_a4')
+
+
+cir4.addEventListener('mouseover', function () {
+    nav4.classList.add("navigation_none");
+})
+
+cir4.addEventListener('mouseleave', function () {
+    nav4.classList.remove("navigation_none");
+})
+
+/*Национльнная кухня*/
+
+let cir5 = document.querySelector('.navigation-btn5')
+let nav5 = document.querySelector('.navigation_a5')
+
+
+cir5.addEventListener('mouseover', function () {
+    nav5.classList.add("navigation_none");
+})
+
+cir5.addEventListener('mouseleave', function () {
+    nav5.classList.remove("navigation_none");
+})
