@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="firstpage.css">
-  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/firstpage.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/slider.css"/>
 </head>
 
 <body>
@@ -60,15 +60,20 @@
 
 
   </div>
-
+  
   <div class="navigation">
-  <ul>
-    <li><a href="#main_about"><label  class="navigation-btn navigation-btn1"></label></a><a href="#main_about" class="navigation_a navigation_a1"> Немного о нас</a></li>
-    <li><a href="#main_slide"><label class="navigation-btn navigation-btn2"></label></a><a href="#main_slide" class="navigation_a navigation_a2"> Фото</a></li>
-    <li><a href="#main_top"><label class="navigation-btn navigation-btn3"></label></a><a href="#main_top" class="navigation_a navigation_a3"> Популярные</a></li>
-    <li><a href="#main_Links"><label class="navigation-btn navigation-btn4"></label></a><a href="#main_Links" class="navigation_a navigation_a4"> Блюда</a></li>
-    <li><a href="#main_Map"><label class="navigation-btn navigation-btn5"></label></a><a  href="#main_Map" class="navigation_a navigation_a5"> Национальные кухни</a></li>
-  </ul>
+    <ul>
+      <li><a href="#main_about"><label class="navigation-btn navigation-btn1"></label></a><a href="#main_about"
+          class="navigation_a navigation_a1"> Немного о нас</a></li>
+      <li><a href="#main_slide"><label class="navigation-btn navigation-btn2"></label></a><a href="#main_slide"
+          class="navigation_a navigation_a2"> Фото</a></li>
+      <li><a href="#main_top"><label class="navigation-btn navigation-btn3"></label></a><a href="#main_top"
+          class="navigation_a navigation_a3"> Популярные</a></li>
+      <li><a href="#main_Links"><label class="navigation-btn navigation-btn4"></label></a><a href="#main_Links"
+          class="navigation_a navigation_a4"> Блюда</a></li>
+      <li><a href="#main_Map"><label class="navigation-btn navigation-btn5"></label></a><a href="#main_Map"
+          class="navigation_a navigation_a5"> Национальные кухни</a></li>
+    </ul>
   </div>
 
   <div class="main">
@@ -121,16 +126,16 @@
           <input type="radio" name="radio-btn" id="radio4">
 
           <div class="slide first">
-            <img src="img\slide1.jpg" alt="">
+            <img src="/img/slide1.jpg" alt="">
           </div>
           <div class="slide">
-            <img src="img\slide2.jpg" alt="">
+            <img src="/img/slide2.jpg" alt="">
           </div>
           <div class="slide">
-            <img src="img\slide3.jpg" alt="">
+            <img src="img/slide3.jpg" alt="">
           </div>
           <div class="slide">
-            <img src="img\slide4.jpg" alt="">
+            <img src="img/slide4.jpg" alt="">
           </div>
         </div>
         <div class="navigation-auto">
@@ -149,8 +154,62 @@
     </div>
 
     <div class="main_top" id="main_top">
+      <h2 class="title">Популярные блюда</h2>
+      <div class="main_top-cards">
 
+        <div class="main_top-card">
+          <div class="main_top-description">
+            <h3>Первое блюдо</h3>
+            <p class="description">Описание</p>
+
+            <div class="categories">
+              <ul>
+                <li>
+                  <div class="categories_circle veg"></div>
+                  <p>Категории</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main_top-card">
+          <div class="main_top-description">
+            <h3>Второе бльдо</h3>
+            <p class="description">Описание</p>
+
+            <div class="categories">
+              <ul>
+                <li>
+                  <div class="categories_circle veg"></div>
+                  <p>Категории</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="main_top-card">
+          <div class="main_top-description">
+            <h3>Третье блюдо</h3>
+            <p class="description">Описание</p>
+
+            <div class="categories">
+              <ul>
+                <li>
+                  <div class="categories_circle veg"></div>
+                  <p>Категории</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
 
     <div class="main_Links" id="main_Links">
       <div class="main_Links-left">
@@ -375,6 +434,6 @@
 
   </div>
 </body>
-<script src="js.js"></script>
+<script src="/JS/js.js"></script>
 
 </html>
