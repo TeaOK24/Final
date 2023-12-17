@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="/css/game.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Игра</title>
+</head>
+
+<body>
+
+    <%- include('blocks/header') -%>
+    
+        <div class="main">
+            <div class="game">
+                <div class="box1">
+                    <h1 id="timer">00:00:00</h1>
+                </div>
+                <div class="box2">Two
+                    <div class="item" draggable="true"><img src="/img/potato.png" alt=""></div>
+                </div>
+                <div class="box3">Three
+                    <div class="item" draggable="true"><img src="/img/carrot.png" alt=""></div>
+                </div>
+                <div class="box4">Four
+                    <div class="item" draggable="true"><img src="/img/apple.png" alt=""></div>
+                </div>
+                <div class="box5">Five</div>
+                <div class="box6 cell">
+                    <img src="/img/miska.jpg" alt="">
+                    <button id="startBtn">Старт</button>
+                </div>
+                <div class="box8">8</div>
+                <div class="box9">9</div>
+
+
+                <div class="box12">12</div>
+            </div>
+
+
+            <button id="pauseBtn" disabled>Пауза</button>
+            <button id="resetBtn" disabled>Сброс</button>
+        </div>
+
+        <%- include('blocks/footer') -%>
+</body>
+<script src="/JS/game.js"></script>
+
+</html>

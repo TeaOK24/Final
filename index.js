@@ -12,8 +12,8 @@ app.get('/test.ejs', (req, res) => {
     res.render('test.ejs')
 })
 
-app.get('/game.html', (req, res) => {
-    res.sendFile(__dirname + '/game.html')
+app.get('/game.ejs', (req, res) => {
+    res.render('game.ejs')
 })
 
 let port = 3001
