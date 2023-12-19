@@ -39,6 +39,16 @@ body {
     }
 }
 
+a{
+    color: #000;
+    text-decoration: none;
+     font-family: "Gilroy";
+}
+
+a:hover{
+    color: #b5e972;
+}
+
 @keyframes theme {
     0% {
         background: #AFE069;
@@ -82,14 +92,15 @@ body {
 
 
 .headers {
+    font-family: "Gilroy";
     width: 95%;
-    height: 200px;
+    height: 250px;
     padding-left: 3%;
     margin: 1% 1% 100px 1%;
 }
 
 .headers-blocksFirst {
-    width: 15%;
+    width: 16%;
     height: 200px;
     background-color: white;
     padding-left: 3%;
@@ -144,14 +155,20 @@ body {
 }
 
 .submenu {
-    background-color: #184d23;
-    top:40px;
+    background-color: white;
+    top: 135px;
     display: none;
     position: absolute;
     transform: translate(-50% -50%);
+    z-index: 1;
 }
 
 .submenu li {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.submenu li:first-child {
     margin-top: 10px;
 }
 
@@ -173,13 +190,6 @@ body {
     margin-left: 50%;
     transform: translate(-50%, 0%);
     margin-bottom: 100px;
-}
-
-.title {
-    font-family: "Gilroy";
-    font-size: 2.5vw;
-    text-align: center;
-    padding-top: 10px;
 }
 
 .veg {

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body onload="NextQuestion(0)">
+
+    <%- include('blocks/header') -%>
+
     <main>
-        <!-- creating a modal for when quiz ends -->
         <div class="modal-container" id="score-modal">
           
             <div class="modal-content-container">
@@ -89,6 +91,9 @@
 
         </div>
     </main>
+
+    <%- include('blocks/footer') -%>
+
     <script src="/JS/test.js"></script>
 </body>
 </html>
