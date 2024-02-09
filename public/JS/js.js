@@ -126,95 +126,95 @@ elem8.addEventListener('mouseleave', function () {
 
 /*Первая еда*/
 let cuisine1 = document.querySelector('.firstcuisine')
-let maincousine1 = document.querySelector('.main_LinksCousine1')
+let maincousine1 = document.querySelector('.main__cousine1')
 let cousinetitle = document.querySelector('.main_Linkstitle')
 
 
 cuisine1.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.toggle('main_LinksCousineNone')
-    maincousine2.classList.add('main_LinksCousineNone')
-    maincousine3.classList.add('main_LinksCousineNone')
-    maincousine4.classList.add('main_LinksCousineNone')
-    maincousine5.classList.add('main_LinksCousineNone')
-    maincousine6.classList.add('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.toggle('links__cousineNone')
+    maincousine2.classList.add('links__cousineNone')
+    maincousine3.classList.add('links__cousineNone')
+    maincousine4.classList.add('links__cousineNone')
+    maincousine5.classList.add('links__cousineNone')
+    maincousine6.classList.add('links__cousineNone')
 
 })
 
 /*Вторая еда*/
 let cuisine2 = document.querySelector('.secondcuisine')
-let maincousine2 = document.querySelector('.main_LinksCousine2')
+let maincousine2 = document.querySelector('.main__cousine2')
 
 
 cuisine2.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.add('main_LinksCousineNone')
-    maincousine2.classList.toggle('main_LinksCousineNone')
-    maincousine3.classList.add('main_LinksCousineNone')
-    maincousine4.classList.add('main_LinksCousineNone')
-    maincousine5.classList.add('main_LinksCousineNone')
-    maincousine6.classList.add('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.add('links__cousineNone')
+    maincousine2.classList.toggle('links__cousineNone')
+    maincousine3.classList.add('links__cousineNone')
+    maincousine4.classList.add('links__cousineNone')
+    maincousine5.classList.add('links__cousineNone')
+    maincousine6.classList.add('links__cousineNone')
 })
 
 /*Третья еда*/
 let cuisine3 = document.querySelector('.thirdcuisine')
-let maincousine3 = document.querySelector('.main_LinksCousine3')
+let maincousine3 = document.querySelector('.main__cousine3')
 
 
 cuisine3.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.add('main_LinksCousineNone')
-    maincousine2.classList.add('main_LinksCousineNone')
-    maincousine3.classList.toggle('main_LinksCousineNone')
-    maincousine4.classList.add('main_LinksCousineNone')
-    maincousine5.classList.add('main_LinksCousineNone')
-    maincousine6.classList.add('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.add('links__cousineNone')
+    maincousine2.classList.add('links__cousineNone')
+    maincousine3.classList.toggle('links__cousineNone')
+    maincousine4.classList.add('links__cousineNone')
+    maincousine5.classList.add('links__cousineNone')
+    maincousine6.classList.add('links__cousineNone')
 })
 
 /*Четвертая еда*/
 let cuisine4 = document.querySelector('.fourthcuisine')
-let maincousine4 = document.querySelector('.main_LinksCousine4')
+let maincousine4 = document.querySelector('.main__cousine4')
 
 
 cuisine4.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.add('main_LinksCousineNone')
-    maincousine2.classList.add('main_LinksCousineNone')
-    maincousine3.classList.add('main_LinksCousineNone')
-    maincousine4.classList.toggle('main_LinksCousineNone')
-    maincousine5.classList.add('main_LinksCousineNone')
-    maincousine6.classList.add('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.add('links__cousineNone')
+    maincousine2.classList.add('links__cousineNone')
+    maincousine3.classList.add('links__cousineNone')
+    maincousine4.classList.toggle('links__cousineNone')
+    maincousine5.classList.add('links__cousineNone')
+    maincousine6.classList.add('links__cousineNone')
 })
 
 /*Четвертая еда*/
 let cuisine5 = document.querySelector('.fifthcuisine')
-let maincousine5 = document.querySelector('.main_LinksCousine5')
+let maincousine5 = document.querySelector('.main__cousine5')
 
 
 cuisine5.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.add('main_LinksCousineNone')
-    maincousine2.classList.add('main_LinksCousineNone')
-    maincousine3.classList.add('main_LinksCousineNone')
-    maincousine4.classList.add('main_LinksCousineNone')
-    maincousine5.classList.toggle('main_LinksCousineNone')
-    maincousine6.classList.add('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.add('links__cousineNone')
+    maincousine2.classList.add('links__cousineNone')
+    maincousine3.classList.add('links__cousineNone')
+    maincousine4.classList.add('links__cousineNone')
+    maincousine5.classList.toggle('links__cousineNone')
+    maincousine6.classList.add('links__cousineNone')
 
 })
 
 /*Четвертая еда*/
 let cuisine6 = document.querySelector('.sixthcuisine')
-let maincousine6 = document.querySelector('.main_LinksCousine6')
+let maincousine6 = document.querySelector('.main__cousine6')
 
 
 cuisine6.addEventListener('click', function () {
-    cousinetitle.classList.add('main_LinksCousineNone')
-    maincousine1.classList.add('main_LinksCousineNone')
-    maincousine2.classList.add('main_LinksCousineNone')
-    maincousine3.classList.add('main_LinksCousineNone')
-    maincousine4.classList.add('main_LinksCousineNone')
-    maincousine5.classList.add('main_LinksCousineNone')
-    maincousine6.classList.toggle('main_LinksCousineNone')
+    cousinetitle.classList.add('links__cousineNone')
+    maincousine1.classList.add('links__cousineNone')
+    maincousine2.classList.add('links__cousineNone')
+    maincousine3.classList.add('links__cousineNone')
+    maincousine4.classList.add('links__cousineNone')
+    maincousine5.classList.add('links__cousineNone')
+    maincousine6.classList.toggle('links__cousineNone')
 })
 
 
@@ -240,72 +240,71 @@ setInterval(function () {
 
 /*Немного о нас*/
 
-let cir1 = document.querySelector('.navigation-btn1')
-let nav1 = document.querySelector('.navigation_a1')
+let label1 = document.querySelector('.navigation__label--btn1')
+let nav1 = document.querySelector('.navigation__link1')
 
 
-cir1.addEventListener('mouseover', function () {
-    nav1.classList.add("navigation_none");
+label1.addEventListener('mouseover', function () {
+    nav1.classList.remove("navigation__none");
 })
 
-cir1.addEventListener('mouseleave', function () {
-    nav1.classList.remove("navigation_none");
+label1.addEventListener('mouseleave', function () {
+    nav1.classList.add("navigation__none");
 })
 
 
 /*Фото*/
 
-let cir2 = document.querySelector('.navigation-btn2')
-let nav2 = document.querySelector('.navigation_a2')
+let label2 = document.querySelector('.navigation__label--btn2')
+let nav2 = document.querySelector('.navigation__link2')
 
 
-cir2.addEventListener('mouseover', function () {
-    nav2.classList.add("navigation_none");
+label2.addEventListener('mouseover', function () {
+    nav2.classList.remove("navigation__none");
 })
 
-cir2.addEventListener('mouseleave', function () {
-    nav2.classList.remove("navigation_none");
+label2.addEventListener('mouseleave', function () {
+    nav2.classList.add("navigation__none");
 })
 
 /*Популярное*/
 
-let cir3 = document.querySelector('.navigation-btn3')
-let nav3 = document.querySelector('.navigation_a3')
+let label3 = document.querySelector('.navigation__label--btn3')
+let nav3 = document.querySelector('.navigation__link3')
 
 
-cir3.addEventListener('mouseover', function () {
-    nav3.classList.add("navigation_none");
+label3.addEventListener('mouseover', function () {
+    nav3.classList.remove("navigation__none");
 })
 
-cir3.addEventListener('mouseleave', function () {
-    nav3.classList.remove("navigation_none");
+label3.addEventListener('mouseleave', function () {
+    nav3.classList.add("navigation__none");
 })
 
 /*Блюда*/
 
-let cir4 = document.querySelector('.navigation-btn4')
-let nav4 = document.querySelector('.navigation_a4')
+let label4 = document.querySelector('.navigation__label--btn4')
+let nav4 = document.querySelector('.navigation__link4')
 
 
-cir4.addEventListener('mouseover', function () {
-    nav4.classList.add("navigation_none");
+label4.addEventListener('mouseover', function () {
+    nav4.classList.remove("navigation__none");
 })
 
-cir4.addEventListener('mouseleave', function () {
-    nav4.classList.remove("navigation_none");
+label4.addEventListener('mouseleave', function () {
+    nav4.classList.add("navigation__none");
 })
 
 /*Национльнная кухня*/
 
-let cir5 = document.querySelector('.navigation-btn5')
-let nav5 = document.querySelector('.navigation_a5')
+let label5 = document.querySelector('.navigation__label--btn5')
+let nav5 = document.querySelector('.navigation__link5')
 
 
-cir5.addEventListener('mouseover', function () {
-    nav5.classList.add("navigation_none");
+label5.addEventListener('mouseover', function () {
+    nav5.classList.remove("navigation__none");
 })
 
-cir5.addEventListener('mouseleave', function () {
-    nav5.classList.remove("navigation_none");
+label5.addEventListener('mouseleave', function () {
+    nav5.classList.add("navigation__none");
 })
-

@@ -1,3 +1,46 @@
+const cell = document.querySelector('.cell');
+const box2 = document.querySelector('.box2');
+const box3 = document.querySelector('.box3')
+const food1 = document.querySelector('#food1');
+const food2 = document.querySelector('#food2');
+
+
+cell.ondragover = allowDrop;
+box2.ondragover = allowDrop;
+box3.ondragover = allowDrop;
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+food1.ondragstart = drag;
+food2.ondragstart = drag;
+
+function drag(event) {
+  event.dataTransfer.setData('id', event.target.id)
+}
+
+cell.ondrop = drop;
+box2.ondrop = drop;
+box3.ondrop = drop;
+
+function drop(event) {
+  let itemId = event.dataTransfer.getData('id');
+  console.log(itemId);
+  event.target.append(document.getElementById(itemId))
+}
+
+
+
+
+
+
+
+
+
+
+
+
 let timer = document.getElementById('timer');
 let startBtn = document.getElementById('startBtn');
 let pauseBtn = document.getElementById('pauseBtn');
@@ -44,101 +87,4 @@ resetBtn.addEventListener('click', () => {
   pauseBtn.disabled = true;
   resetBtn.disabled = true;
 });
-
-
-
-
-
-
-
-
-
-/* Считываем все боксы в массив
-const boxes = Array.from(document.querySelectorAll(".cells"));
-const items = Array.from(document.querySelectorAll(".draggable"));
-
-
-items.forEach((item) => {
-// Обработчик начала перетаскивания элемента
-item.addEventListener("dragstart", dragstart);
-// Обработчик завершения перетаскивания элемента
-item.addEventListener("dragend", dragend);
-});
-
-
-// Обработчик для боксов
-boxes.forEach((box) => {
-  // Когда заходим элементом в бокс
-  box.addEventListener("dragover", dragover);
-  // Когда отпускаем элемент на нужном боксе
-  box.addEventListener("drop", drop);
-  // Когда достигаем бокс
-  box.addEventListener("dragenter", dragenter);
-  // Когда покидаем бокс
-  box.addEventListener("dragleave", dragleave);
-});
-
-// Функция начала перетаскивания элемента
-function dragstart(items) {
-  // Меняем цвет на фиолетовый
-  items.target.classList.add("item--hold");
-  // Удаляем элемент из бокса
-  setTimeout(() => items.target.classList.add("item--hide"), 0);
-}
-
-// Функция завершения перетаскивания элемента
-function dragend(items) {
-  alert("не правильно!");
-}
-
-function dragover(e) {
-  e.preventDefault();
-}
-
-function dragenter(e) {
-  // Добавить смену фона
-  e.target.classList.add(".box--hovered");
-}
-
-function dragleave(e) {
-  // Убирать смену фона
-  e.target.classList.remove(".box--hovered");
-}*/
-
-const dragAndDrop = () => {
-  const item = document.querySelector('.item');
-  const boxes = document.querySelectorAll('.cell');
-
-  //сделать массив 
-  const dragStart = function () {
-    setTimeout(() => {
-      this.classList.add('hide');
-    },0)
-  };
-const dragEnd = function(){
-  this.classList.remove('hide');
-};
-
-
-
-
-boxes.forEach((box) => {
-
-});
-
-  item.addEventListener('dragend', dragEnd);
-  item.addEventListener('dragstart', dragStart);
-
-
-
-
-
-
-
-};
-
-dragAndDrop()
-
-
-
 

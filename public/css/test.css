@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
+p{
+    font-family: "Gilroy";
+}
+
+span{
+    font-family: "Gilroy";
+}
   
 
 main{
@@ -97,7 +105,7 @@ input[type="radio"] {
 
 
 input[type=radio]:checked ~ .option {
-	background: paleturquoise;
+	background: darkgray;
 }
 
 .next-button-container{
@@ -118,7 +126,7 @@ input[type=radio]:checked ~ .option {
     outline: none;
 }
 .next-button-container button:hover{
-    background-color: rgb(143, 93, 93);
+    background-color: rgb(12, 173, 179);
 }
 
 .modal-container{
@@ -169,6 +177,10 @@ input[type=radio]:checked ~ .option {
 .grade-details p{
     color: white;
     text-align: center;
+}
+
+.grade-details span{
+    color: white;
 }
 
 .modal-button-container{

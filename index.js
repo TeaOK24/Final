@@ -1,8 +1,22 @@
 const express = require('express')
 const app = express()
+const mysql2 = require('mysql2/promise')
+const Sequelize = require('sequelize');
+const db = require('./db/db');
+const Russian_cuisine =db.russian_cuisine;
+
+
+async function t02(){
+    const result = await Russian_cuisine.findAll();
+    result.forEach(item => console.log(item.name));
+}
+
+t02()
 
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
+
+
 
 app.get('/', (req, res) => {
     res.render('index')
@@ -76,6 +90,12 @@ app.get('/Vegetarian.ejs', (req, res) => {
     res.render('Vegetarian.ejs')
 })
 
+
+/*app.get('/', (req, res) => {
+    pool.query('SELECT * FROM russian_cuisine').then(function (data) {
+        res.json(data)
+    })
+})*/
 
 
 let port = 3001

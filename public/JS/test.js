@@ -2,8 +2,8 @@ const questions = [
     {
         question: "Нарезка для жюльена?",
         optionA: "Кубиками",
-        optionB: "Просто нарезкка",
-        optionC: "5 days",
+        optionB: "Баттонэ",
+        optionC: "Сизле",
         optionD: "Соломкой",
         correctOption: "optionD"
     },
@@ -13,13 +13,13 @@ const questions = [
         optionA: "Соль способствует быстрому закипанию воды",
         optionB: "Соль увеличивает температуру кипения",
         optionC: "Соль уменьшает температуру кипения",
-        optionD: "12 players",
+        optionD: "Никак не влияет",
         correctOption: "optionB"
     },
 
     {
         question: "С ботанической точки зрения, помидор - это...",
-        optionA: "Donald Trump",
+        optionA: "Гриб",
         optionB: "Овощ",
         optionC: "Фрукт",
         optionD: "Ягода",
@@ -63,165 +63,165 @@ const questions = [
     },
 
     {
-        question: "Which country is the largest in the world ?",
-        optionA: "Russia",
-        optionB: "Canada",
-        optionC: "Africa",
-        optionD: "Egypt",
+        question: "Название этого скандинавского блюда в переводе со шведского означает «маленькие кусочки на сковороде»",
+        optionA: "Питтипанна",
+        optionB: "Луссекатт",
+        optionC: "Граавилохи",
+        optionD: "Сэмла",
         correctOption: "optionA"
     },
 
     {
-        question: "Which of these numbers is an odd number ?",
-        optionA: "Ten",
-        optionB: "Twelve",
-        optionC: "Eight",
-        optionD: "Eleven",
+        question: "Тархоня — это ...",
+        optionA: "французский десерт",
+        optionB: "итальянкий аперитив",
+        optionC: "финский рыбный суп",
+        optionD: "венгерские макаронные изделия",
         correctOption: "optionD"
     },
 
     {
-        question: `"You Can't see me" is a popular saying by`,
-        optionA: "Eminem",
-        optionB: "Bill Gates",
-        optionC: "Chris Brown",
-        optionD: "John Cena",
+        question: "Из какого мяса традиционно готовят ростбиф?",
+        optionA: "Из свинины",
+        optionB: "Из баранины",
+        optionC: "Из мяса птицы",
+        optionD: "Из говядины",
         correctOption: "optionD"
     },
 
     {
-        question: "Where is the world tallest building located ?",
-        optionA: "Africa",
-        optionB: "California",
-        optionC: "Dubai",
-        optionD: "Italy",
+        question: "Киббех, кеббе или кубэ в традиционной турецкой кухне — это ...",
+        optionA: "аналог пельменей с мясной начинкой",
+        optionB: "суп из баранины с кусочками ананаса",
+        optionC: "котлеты из булгура, со специями",
+        optionD: "котлеты, завернутые в баклажаны",
         correctOption: "optionC"
     },
 
     {
-        question: "The longest river in the United Kingdom is ?",
-        optionA: "River Severn",
-        optionB: "River Mersey",
-        optionC: "River Trent",
-        optionD: "River Tweed",
+        question: "Из какого теста обычно делают в Германии булочку твейбак?",
+        optionA: "Из дрожжевого",
+        optionB: "Из песочного",
+        optionC: "Из слоёного",
+        optionD: "Из пресного",
         correctOption: "optionA"
     },
 
 
     {
-        question: "How many permanent teeth does a dog have ?",
-        optionA: "38",
-        optionB: "42",
-        optionC: "40",
-        optionD: "36",
+        question: "В немецкой кухне очень популярны Локоны Шиллера. Что это такое?",
+        optionA: "Это вид макарон",
+        optionB: "Это деликатесный рыбный продукт",
+        optionC: "Это десерт из взбитых сливок и сахарной ваты",
+        optionD: "None",
         correctOption: "optionB"
     },
 
     {
-        question: "Which national team won the football World cup in 2018 ?",
-        optionA: "England",
-        optionB: "Brazil",
-        optionC: "Germany",
-        optionD: "France",
+        question: "Чем натирают хрустящий хлеб, когда готовят традиционное итальянское блюдо брускетта?",
+        optionA: "Паприкой",
+        optionB: "Шафраном",
+        optionC: "Перцем",
+        optionD: "Чесноком",
         correctOption: "optionD"
     },
 
     {
-        question: "Which US state was Donald Trump Born ?",
-        optionA: "New York",
-        optionB: "California",
-        optionC: "New Jersey",
-        optionD: "Los Angeles",
+        question: "К какой кухне относится курино-луковый суп с забавным названием кокки-ликки?",
+        optionA: "К шотландской",
+        optionB: "К муксиканской",
+        optionC: "К португальской",
+        optionD: "К немецкой",
         correctOption: "optionA"
     },
 
     {
-        question: "How man states does Nigeria have ?",
-        optionA: "24",
-        optionB: "30",
-        optionC: "36",
-        optionD: "37",
+        question: "Национальным блюдом какой страны является паэлья?",
+        optionA: "Франция",
+        optionB: "Австрия",
+        optionC: "Испания",
+        optionD: "Англия",
         correctOption: "optionC"
     },
 
     {
-        question: "____ is the capital of Nigeria ?",
-        optionA: "Abuja",
-        optionB: "Lagos",
-        optionC: "Calabar",
-        optionD: "Kano",
+        question: "В какой стране пельмени называют «Дюшбара»?",
+        optionA: "Азербайджан",
+        optionB: "Болгария",
+        optionC: "Армения",
+        optionD: "Казахстан",
         correctOption: "optionA"
     },
 
     {
-        question: "Los Angeles is also known as ?",
-        optionA: "Angels City",
-        optionB: "Shining city",
-        optionC: "City of Angels",
-        optionD: "Lost Angels",
+        question: "Лепешки «Кабартма» из какой страны?",
+        optionA: "Румыния",
+        optionB: "Венгрия",
+        optionC: "Россия",
+        optionD: "Белорусь",
         correctOption: "optionC"
     },
 
     {
-        question: "What is the capital of Germany ?",
-        optionA: "Georgia",
-        optionB: "Missouri",
-        optionC: "Oklahoma",
-        optionD: "Berlin",
+        question: "Национальным блюдом какой страны является «Билтонг» - длинные полосы высушенного мяса, приправленного всевозможными специями?",
+        optionA: "Казахстан",
+        optionB: "Тунис",
+        optionC: "Норвегия",
+        optionD: "ЮАР",
         correctOption: "optionD"
     },
 
     {
-        question: "How many sides does an hexagon have ?",
-        optionA: "Six",
-        optionB: "Sevene",
-        optionC: "Four",
-        optionD: "Five",
+        question: "Из какого языка происходит слово «Майонез»?",
+        optionA: "Фрацузского",
+        optionB: "Итальянского",
+        optionC: "Английского",
+        optionD: "Немецкого",
         correctOption: "optionA"
     },
 
     {
-        question: "How many planets are currently in the solar system ?",
-        optionA: "Eleven",
-        optionB: "Seven",
-        optionC: "Nine",
-        optionD: "Eight",
+        question: "Национальным блюдом какой страны является «Паэлья»?",
+        optionA: "Франция",
+        optionB: "Германия",
+        optionC: "Австралия",
+        optionD: "Испания",
         correctOption: "optionD"
     },
 
     {
-        question: "Which Planet is the hottest ?",
-        optionA: "Jupitar",
-        optionB: "Mercury",
-        optionC: "Earth",
-        optionD: "Venus",
+        question: "Харчо - яркий представитель кавказской кухни. Национальным блюдом какой страны оно является?",
+        optionA: "Армения",
+        optionB: "Грузии",
+        optionC: "Азербайджана",
+        optionD: "Абхазия",
         correctOption: "optionB"
     },
 
     {
-        question: "where is the smallest bone in human body located?",
-        optionA: "Toes",
-        optionB: "Ears",
-        optionC: "Fingers",
-        optionD: "Nose",
+        question: "Как называется старинное простонародное кушанье, соединяющее в себе первое и второе блюдо, похожее на густой суп из крупы и овощей с заправкой из сала? Это национальное белорусское блюдо.",
+        optionA: "Солянка",
+        optionB: "Кулеш",
+        optionC: "Колдуны",
+        optionD: "Капустница",
         correctOption: "optionB"
     },
 
     {
-        question: "How many hearts does an Octopus have ?",
-        optionA: "One",
-        optionB: "Two",
-        optionC: "Three",
-        optionD: "Four",
+        question: "Когда обычно готовят салаты?",
+        optionA: "За пару часов",
+        optionB: "Их готовт с вечера",
+        optionC: "Перед подачей",
+        optionD: "За день до подачи",
         correctOption: "optionC"
     },
 
     {
-        question: "How many teeth does an adult human have ?",
-        optionA: "28",
-        optionB: "30",
-        optionC: "32",
-        optionD: "36",
+        question: "Что часто используют в качестве основы для теплого салата?",
+        optionA: "Цветную капусту",
+        optionB: "Кабачки",
+        optionC: "Баклажаны",
+        optionD: "Перец",
         correctOption: "optionC"
     }
 

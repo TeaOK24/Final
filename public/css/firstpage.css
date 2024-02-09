@@ -1,8 +1,12 @@
 /*Шапка*/
 
-.header_UpLogo {
+.header {
+    width: 100%;
+    height: 1500px;
+    size: 50%;
+}
 
-
+.header__uplogo {
     top: 55%;
     left: 50%;
     position: absolute;
@@ -10,9 +14,7 @@
     z-index: 1;
 }
 
-.header_DownLogo {
-
-
+.header__downlogo {
     top: 55%;
     left: 50%;
     position: absolute;
@@ -32,9 +34,7 @@
     }
 }
 
-.header_FoodLogo {
-
-
+.header__foodlogo {
     top: 55%;
     left: 50%;
     position: absolute;
@@ -57,8 +57,7 @@
     }
 }
 
-.header_MidlleLogo {
-
+.header__midllelogo {
     top: 55%;
     left: 50%;
     position: absolute;
@@ -71,9 +70,7 @@
     animation-fill-mode: forwards;
 }
 
-.header_EatLogo {
-
-
+.header__eatlogo {
     top: 55%;
     left: 50%;
     position: absolute;
@@ -134,35 +131,35 @@
     color: #000000;
 }
 
-.navigation_a {
-    opacity: 0;
+.navigation__none {
+    opacity: 0%;
 }
 
-.navigation_a1 {
+.navigation__link1 {
     animation-delay: 2.5s;
     animation-duration: 1s;
     animation-name: scalingzero;
 }
 
-.navigation_a2 {
+.navigation__link2 {
     animation-delay: 3s;
     animation-duration: 1s;
     animation-name: scalingzero;
 }
 
-.navigation_a3 {
+.navigation__link3 {
     animation-delay: 3.5s;
     animation-duration: 1s;
     animation-name: scalingzero;
 }
 
-.navigation_a4 {
+.navigation__link4 {
     animation-delay: 4s;
     animation-duration: 1s;
     animation-name: scalingzero;
 }
 
-.navigation_a5 {
+.navigation__link5 {
     animation-delay: 4.5s;
     animation-duration: 1s;
     animation-name: scalingzero;
@@ -182,11 +179,8 @@
     }
 }
 
-.navigation_none {
-    opacity: 100%;
-}
 
-.navigation-btn {
+.navigation__label--btn {
     float: left;
     border: 2px solid #ffffff;
     padding: 7px;
@@ -195,23 +189,20 @@
     transition: 1s;
 }
 
-.navigation-btn:hover {
+.navigation__label--btn:hover {
     background-color: #ffffff;
 }
 
 
 
 /*Небольшое описание сайта*/
-.main_about {
-    font-family: "Gilroy";
-    font-size: 1vw;
-    width: 100%;
+.main__about {
     margin-bottom: 300px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.5);
 }
 
-.main_about-text {
+.main__about--text {
     width: 100%;
     height: 100%;
     display: grid;
@@ -219,14 +210,14 @@
     grid-auto-rows: 1fr 1fr;
 }
 
-.main_about-left {
+.main__about--left {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
     margin-bottom: 40px;
 }
 
-.main_about-right {
+.main__about--right {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
@@ -234,26 +225,22 @@
 }
 
 /*Слайдер*/
-.main_slide {
-    width: 100%;
-    margin-bottom: 300px;
-    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.5)
-}
+
 
 /*Топовые блюда*/
-.main_top {
+.main__best {
     width: 100%;
     margin-bottom: 300px;
     background-color: rgb(255, 255, 255);
 }
 
-.main_top-cards {
+.main__best--cards{
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.main_top-card {
+.main__best--card {
     width: 80%;
     height: 600px;
     /*background-image: ;*/
@@ -264,7 +251,7 @@
     border: 1px solid #000000;
 }
 
-.main_top-description {
+.main__dest--food {
     width: 110%;
     height: 60%;
     top: 85%;
@@ -275,16 +262,16 @@
     border-radius: 100%;
 }
 
-.main_top-description h3 {
+.main__best--food h3 {
     top: 30%;
-    left: 65%;
+    left: 50%;
     transform: translate(-50%, -50%);
     position: relative;
     font-family: "Gilroy";
     font-size: 1.2vw;
 }
 
-.description {
+.main__best--description {
     top: 40%;
     left: 65%;
     transform: translate(-50%, -50%);
@@ -294,38 +281,15 @@
 }
 
 
-.categories {
-    top: 40%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    display: inline;
-    position: relative;
-}
-
-.categories_circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    float: left;
-    margin-right: 10px;
-}
-
-.categories ul {
-    list-style: none;
-    font-family: "Gilroy";
-    font-size: .7vw;
-}
-
 /*Ссылки*/
-.main_Links {
+.main_links {
     width: 100%;
     height: 800px;
     margin-bottom: 300px;
 }
 
 /*Ссылки и картинки слева*/
-.main_Links-left {
+.main__links--left {
     background-color: rgb(255, 255, 255);
     width: 78%;
     height: 100%;
@@ -333,49 +297,78 @@
     box-shadow: -20px 0px 10px 10px rgba(0, 0, 0, 0.5)
 }
 
-.main_Links-left h2{
-    font-family: "Gilroy";
-    font-size: 2.5vw;
-    text-align: center;
-    padding-top: 10px;
+.main__cousine1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.main_LinksCousine1 {
+.main__cousine1 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousine2 {
+.main__cousine2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__cousine2 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousine3 {
+.main__cousine3 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__cousine3 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousine4 {
+.main__cousine4 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__cousine4 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousine5 {
+.main__cousine5 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__cousine5 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousine6 {
+.main__cousine6 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main__cousine6 img {
     width: 100%;
     height: 100%;
 }
 
-.main_LinksCousineNone {
+.links__cousineNone {
     display: none;
 }
 
 /*Ссылки переключатели ссылок справа*/
-.main_Links-right {
+.main__links--right {
     font-family: "Gilroy";
     font-size: 1.1vw;
     background-color: rgb(255, 255, 255);
@@ -386,7 +379,12 @@
     box-shadow: 20px 0px 10px 10px rgba(0, 0, 0, 0.5)
 }
 
-.main_Links-Spisok {
+.main__links--right h2 {
+    font-size: 1.5vw;
+    font-family: "Gilroy";
+}
+
+.main__links--spisok {
     width: 100%;
     height: 100%;
     display: flex;
@@ -394,13 +392,13 @@
     justify-content: space-around;
 }
 
-.main_Links-Spisok a {
+.main__links--spisok a {
     color: #000000;
     text-decoration: none;
     cursor: pointer;
 }
 
-.main_Links-Spisok a:hover {
+.main__links--spisok a:hover {
     color: #686868;
     text-decoration: none;
     cursor: pointer;

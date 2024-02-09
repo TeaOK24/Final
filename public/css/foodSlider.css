@@ -1,0 +1,73 @@
+   * {
+       margin: 0;
+       padding: 0;
+   }
+
+   /* Собственно сам слайдер */
+   .slider {
+       max-width: 100%;
+       position: relative;
+       height: 600px;
+       margin-top: 50px;
+       object-fit: hidden;
+   }
+
+   .item {
+       width: 100%;
+       display: flex;
+   }
+
+   /* Картинка мастабируется по отношению к родительскому элементу */
+   .slider .item img {
+       object-fit: cover;
+       max-width: 50%;
+       height: 500px;
+       float: left;
+       position: absolute;
+   }
+
+   .slider .item p {
+       object-fit: cover;
+       max-width: 50%;
+       height: 500px;
+       float: left;
+       padding-left: 5%;
+       padding-right: 5%;
+   }
+
+   /* Кнопки вперед и назад */
+   .slider a{
+       user-select: none;
+       cursor: pointer;
+       position: absolute;
+       top: 50%;
+       margin-top: -22px;
+       padding: 16px;
+       color: rgb(0, 0, 0);
+       background-color: rgba(13, 151, 54, 0.8);
+       font-weight: bold;
+       font-size: 18px;
+       transition: 0.6s ease;
+       border-radius: 0 3px 3px 0;
+       z-index: 2;
+   }
+
+   .slider .prev{
+    left: 0;
+}
+
+   .slider .next {
+       right: 0;
+       border-radius: 3px 0 0 3px;
+   }
+
+   /* При наведении на кнопки добавляем фон кнопок */
+   .slider .prev:hover,
+   .slider .next:hover {
+       background-color: rgba(9, 189, 63, 0.8);
+   }
+
+   .active,
+   .slider-dots_item:hover {
+       background-color: #aaa;
+   }

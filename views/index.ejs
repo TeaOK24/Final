@@ -12,14 +12,13 @@
 
 <body>
 
+  
   <div class="ot"></div>
+
+  <!-- Шапка основной страницы -->
   <div class="header">
 
-
-    <div class="header_Up">
-    </div>
-
-    <div class="header_UpLogo">
+    <div class="header__uplogo">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="617" height="903"
         viewBox="0 0 617 903">
         <image id="Прямоугольник_1" data-name="Прямоугольник 1" x="1" width="616" height="537"
@@ -27,7 +26,7 @@
       </svg>
     </div>
 
-    <div class="header_DownLogo">
+    <div class="header__downlogo">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="617" height="316"
         viewBox="0 0 617 316">
         <image id="Прямоугольник_1" data-name="Прямоугольник 1" x="1" width="616" height="316"
@@ -35,7 +34,7 @@
       </svg>
     </div>
 
-    <div class="header_FoodLogo">
+    <div class="header__foodlogo">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="617" height="903"
         viewBox="0 0 617 903">
         <image id="Food" x="1" y="377" width="616" height="179"
@@ -43,47 +42,43 @@
       </svg>
     </div>
 
-    <div class="header_MidlleLogo">
+    <div class="header__midllelogo">
       <svg xmlns="http://www.w3.org/2000/svg" width="617" height="903" viewBox="0 0 617 903">
         <rect id="Прямоугольник_2" data-name="Прямоугольник 2" class="cls-1" x="95" y="752" width="421" height="8" />
       </svg>
 
     </div>
 
-    <div class="header_EatLogo">
+    <div class="header__eatlogo">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="617" height="903"
         viewBox="0 0 617 903">
         <image id="Слой_1" data-name="Слой 1" x="231" y="99" width="154" height="170"
           xlink:href="data:img/png;base64,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" />
       </svg>
     </div>
-
-
   </div>
 
+    <!-- Слайдер -->
   <div class="navigation">
     <ul>
-      <li><a href="#main_about"><label class="navigation-btn navigation-btn1"></label></a><a href="#main_about"
-          class="navigation_a navigation_a1"> Немного о нас</a></li>
-      <li><a href="#main_slide"><label class="navigation-btn navigation-btn2"></label></a><a href="#main_slide"
-          class="navigation_a navigation_a2"> Фото</a></li>
-      <li><a href="#main_top"><label class="navigation-btn navigation-btn3"></label></a><a href="#main_top"
-          class="navigation_a navigation_a3"> Популярные</a></li>
-      <li><a href="#main_Links"><label class="navigation-btn navigation-btn4"></label></a><a href="#main_Links"
-          class="navigation_a navigation_a4"> Блюда</a></li>
-      <li><a href="#main_Map"><label class="navigation-btn navigation-btn5"></label></a><a href="#main_Map"
-          class="navigation_a navigation_a5"> Национальные кухни</a></li>
+      <li><a href="#main__about"><label class="navigation__label--btn navigation__label--btn1"></label></a><a href="#main__about"
+          class="navigation__none navigation__link1">Немного о нас</a></li>
+      <li><a href="#main__slider"><label class="navigation__label--btn navigation__label--btn2"></label></a><a href="#main__slider"
+          class="navigation__none navigation__link2">Фото</a></li>
+      <li><a href="#main__best"><label class="navigation__label--btn navigation__label--btn3"></label></a><a href="#main__best"
+          class="navigation__none navigation__link3">Популярные</a></li>
+      <li><a href="#main__links"><label class="navigation__label--btn navigation__label--btn4"></label></a><a href="#main__links"
+          class="navigation__none navigation__link4">Блюда</a></li>
+      <li><a href="#main__map"><label class="navigation__label--btn navigation__label--btn5"></label></a><a href="#main__map"
+          class="navigation__none navigation__link5">Национальные кухни</a></li>
     </ul>
   </div>
 
   <div class="main">
-
-    <div class="main_about" id="main_about">
+    <div class="main__about" id="main__about">
       <h2 class="title">Немного о нас</h2>
-      <a href="test.ejs">тест</a>
-      <a href="game.ejs">игра</a>
-      <div class="main_about-text">
-        <div class="main_about-left">
+      <div class="main__about--text">
+        <div class="main__about--left">
           <p>Добро пожаловать на наш сайт, посвященный кулинарным рецептам из разных стран мира! Здесь вы сможете
             погрузиться в разнообразие кухонь различных культур и открыть для себя новые вкусы.</p>
 
@@ -100,7 +95,7 @@
             свою
             кухню.</p>
         </div>
-        <div class="main_about-right">
+        <div class="main__about--right">
           <p>Мы стремимся предоставить вам не только просто список ингредиентов и шаг за шагом рецепт, но и подробные
             инструкции, как приготовить это блюдо правильно. Мы уверены, что каждый может насладиться приготовлением
             идеального блюда, даже без опыта в кулинарии. Поэтому мы постарались разложить все по полочкам и представить
@@ -119,137 +114,121 @@
       </div>
     </div>
 
-    <div class="main_slide" id="main_slide">
-      <div class="slider">
-        <div class="slides">
+      <div class="main__slider" id="main__slider">
+        <div class="main__slider--slides">
           <input type="radio" name="radio-btn" id="radio1">
           <input type="radio" name="radio-btn" id="radio2">
           <input type="radio" name="radio-btn" id="radio3">
           <input type="radio" name="radio-btn" id="radio4">
 
-          <div class="slide first">
+          <div class="main__slider--slide first">
             <img src="/img/slide1.jpg" alt="">
           </div>
-          <div class="slide">
+          <div class="main__slider--slide">
             <img src="/img/slide2.jpg" alt="">
           </div>
-          <div class="slide">
+          <div class="main__slider--slide">
             <img src="img/slide3.jpg" alt="">
           </div>
-          <div class="slide">
+          <div class="main__slider--slide">
             <img src="img/slide4.jpg" alt="">
           </div>
         </div>
-        <div class="navigation-auto">
+        <div class="main__slider--auto">
           <div class="auto-btn1"></div>
           <div class="auto-btn2"></div>
           <div class="auto-btn3"></div>
           <div class="auto-btn4"></div>
         </div>
-        <div class="navigation-manual">
+        <div class="main__slider--manual">
           <label for="radio1" class="manual-btn"></label>
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
           <label for="radio4" class="manual-btn"></label>
         </div>
       </div>
-    </div>
 
-    <div class="main_top" id="main_top">
+        <!-- Популярные блюда -->
+    <div class="main__best" id="main__best">
       <h2 class="title">Популярные блюда</h2>
-      <div class="main_top-cards">
+      <div class="main__best--cards">
 
-        <div class="main_top-card">
-          <div class="main_top-description">
+        <div class="main__best--card">
+          <div class="main__best--food">
             <h3>Первое блюдо</h3>
-            <p class="description">Описание</p>
+            <p class="main__best--description">Описание</p>
 
-            <div class="categories">
-              <ul>
-                <li>
-                  <div class="categories_circle veg"></div>
-                  <p>Категории</p>
-                </li>
-              </ul>
-            </div>
 
           </div>
         </div>
 
-        <div class="main_top-card">
-          <div class="main_top-description">
+        <div class="main__best--card">
+          <div class="main__best--food">
             <h3>Второе бльдо</h3>
-            <p class="description">Описание</p>
+            <p class="main__best--description">Описание</p>
 
-            <div class="categories">
-              <ul>
-                <li>
-                  <div class="categories_circle veg"></div>
-                  <p>Категории</p>
-                </li>
-              </ul>
-            </div>
+
 
           </div>
         </div>
 
-        <div class="main_top-card">
-          <div class="main_top-description">
+        <div class="main__best--card">
+          <div class="main__best--food">
             <h3>Третье блюдо</h3>
-            <p class="description">Описание</p>
+            <p class="main__best--description">Описание</p>
 
-            <div class="categories">
-              <ul>
-                <li>
-                  <div class="categories_circle veg"></div>
-                  <p>Категории</p>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="main_Links" id="main_Links">
-      <div class="main_Links-left">
+    <!-- Ссылки -->
+    <div class="main_links" id="main_links">
+      <div class="main__links--left">
         <h2 class="main_Linkstitle">Выберите из списка</h2>
-        <div class="main_LinksCousine1 main_LinksCousineNone ">
+
+        <div class="main__cousine1 links__cousineNone ">
           <h2><a href="Vegetarian.ejs">
               Вегетарианские блюда
             </a></h2>
+            <img src="/img/mainLinks/Vegan.png" alt="">
         </div>
-        <div class="main_LinksCousine2 main_LinksCousineNone ">
+        <div class="main__cousine2 links__cousineNone ">
           <h2><a href="Side_dishes.ejs">
               Гарниры
             </a></h2>
+            <img src="/img/mainLinks/Garnir.png" alt="">
         </div>
-        <div class="main_LinksCousine3 main_LinksCousineNone">
+        <div class="main__cousine3 links__cousineNone">
           <h2><a href="Spicy.ejs">
               Острая кухня
             </a></h2>
+            <img src="/img/mainLinks/Spicy.jpg" alt="">
         </div>
-        <div class="main_LinksCousine4 main_LinksCousineNone">
+        <div class="main__cousine4 links__cousineNone">
           <h2><a href="Salads.ejs">
               Салаты
             </a></h2>
+            <img src="/img/mainLinks/Salad.png" alt="">
         </div>
-        <div class="main_LinksCousine5 main_LinksCousineNone">
+        <div class="main__cousine5 links__cousineNone">
           <h2><a href="Soups.ejs">
               Супы
             </a></h2>
+            <img src="/img/mainLinks/Soup.png" alt="">
         </div>
-        <div class="main_LinksCousine6 main_LinksCousineNone">
+        <div class="main__cousine6 links__cousineNone">
           <h2><a href="Bread&pastries.ejs">
               Хлеб и выпечка
             </a></h2>
+            <img src="/img/mainLinks/hleb.png" alt="">
         </div>
       </div>
-      <div class="main_Links-right">
+      <div class="main__links--right">
         <h2>Список блюд:</h2>
 
-        <div class="main_Links-Spisok">
+        <div class="main__links--spisok">
           <a class="firstcuisine">Вегетарианские блюда</a>
           <a class="secondcuisine">Гарниры</a>
           <a class="thirdcuisine">Острая кухня</a>
@@ -262,7 +241,8 @@
       </div>
     </div>
 
-    <div class="main_Map" id="main_Map">
+        <!-- Карта -->
+    <div class="main_Map" id="main_map">
       <h2 class="title">Национальные кухни</h2>
       <div class="main_Map-map">
         <svg viewBox="0 0 1333.3333 818.66669">
