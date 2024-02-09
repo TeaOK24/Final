@@ -1,19 +1,13 @@
-const express = require('express')
+import express from 'express'
 const app = express()
-const mysql2 = require('mysql2/promise')
-const Sequelize = require('sequelize');
-const db = require('./db/db');
+import db from "./db.js"
+import config from './config.js';
 const Russian_cuisine =db.russian_cuisine;
+import base from './db/base.js';
 
 
-async function t02(){
-    const result = await Russian_cuisine.findAll();
-    result.forEach(item => console.log(item.name));
-}
 
-t02()
-
-app.set('view engine', 'ejs')
+/*app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'));
 
 
@@ -88,7 +82,7 @@ app.get('/Spicy.ejs', (req, res) => {
 
 app.get('/Vegetarian.ejs', (req, res) => {
     res.render('Vegetarian.ejs')
-})
+})*/
 
 
 /*app.get('/', (req, res) => {
@@ -98,7 +92,10 @@ app.get('/Vegetarian.ejs', (req, res) => {
 })*/
 
 
-let port = 3001
+let port = config.PORT || 8080
 app.listen(port, () => {
-    console.log(`Сервер запущен: http://localhost:${port}`)
+    console.log(`Сервер запущен: http://localhost:${port}...`)
 })
+
+await db.authenticate()
+await db.sync()
