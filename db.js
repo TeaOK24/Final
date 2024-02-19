@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize';
 import config from './config.js';
+
 export default new Sequelize (
 config.DB_NAME,
 config.DB_USER,

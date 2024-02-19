@@ -1,19 +1,24 @@
 import express from 'express'
-const app = express()
+const app = express();
 import db from "./db.js"
 import config from './config.js';
-const Russian_cuisine =db.russian_cuisine;
 import base from './db/base.js';
+import cors from 'cors';
 
+import router from './routes/indexRouter.js'
+import { json } from 'sequelize';
 
+app.use(express.json())
+app.use('/api', router)
+app.use(cors())
 
 /*app.set('view engine', 'ejs')
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'views')))
 
 
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.sendFile(`${__dirname}/views/index.ejs`);
 })
 
 app.get('/test.ejs', (req, res) => {
