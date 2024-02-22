@@ -1,9 +1,10 @@
 export default {
-    PORT: 3000,
+    PORT: 3001,
     DB_NAME: "cuisine",
     DB_USER: "root",
     DB_PASSWORD: "",
     DB_HOST: "localhost",
     DB_PORT: 3306,
-    DB_DIALECT: "mysql"
+    DB_DIALECT: "mysql",
+    SECRET_KEY: "random123"
 }

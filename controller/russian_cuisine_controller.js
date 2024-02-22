@@ -7,7 +7,7 @@ class russian_cuisine_controller {
         try {
             const { name, ingredients, photo, manual, estimation } = req.body;
             const check = await russian_cuisine.findOne({ where: { name } })
-            if (check) { return res.json("неполучилось добавить") }
+            if (check) { return res.json("такое блюдо уже существует") }
             const food = await russian_cuisine.create({ name, ingredients, photo, manual, estimation })
             res.json(food)
         }

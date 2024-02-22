@@ -7,10 +7,15 @@ import cors from 'cors';
 
 import router from './routes/indexRouter.js'
 import { json } from 'sequelize';
+import ErrorHandlingMiddleware from './middleware/ErrorHandlingMiddleware.js';
 
 app.use(express.json())
 app.use('/api', router)
 app.use(cors())
+
+
+//Последний, завершающий
+app.use(ErrorHandlingMiddleware)
 
 /*app.set('view engine', 'ejs')
 app.use(express.static(path.join(__dirname, 'views')))

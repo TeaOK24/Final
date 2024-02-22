@@ -14,6 +14,7 @@ import sidedishesRouter from './sidedishesRouter.js'
 import soupsRouter from './soupsRouter.js'
 import spiciesRouter from './spiciesRouter.js'
 import vegetariansRouter from './vegetariansRouter.js'
+import userRouter from './userRouter.js'
 
 router.use('/russian', russianCuisineRouter);
 router.use('/africa', africaCuisineRouter);
@@ -29,5 +30,7 @@ router.use('/sidedishes', sidedishesRouter);
 router.use('/soups', soupsRouter);
 router.use('/spicies', spiciesRouter);
 router.use('/vegetarians', vegetariansRouter);
+router.use('/user', userRouter);
+
 
 export default router
