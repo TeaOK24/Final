@@ -4,37 +4,51 @@ import db from "./db.js"
 import config from './config.js';
 import base from './db/base.js';
 import cors from 'cors';
+import path from 'path';
+import russian_cuisine_controller from './controller/russian_cuisine_controller.js';
 
 import router from './routes/indexRouter.js'
 import { json } from 'sequelize';
 import ErrorHandlingMiddleware from './middleware/ErrorHandlingMiddleware.js';
 
-app.use(express.json())
-app.use('/api', router)
-app.use(cors())
+
 
 
 //Последний, завершающий
 app.use(ErrorHandlingMiddleware)
 
-/*app.set('view engine', 'ejs')
-app.use(express.static(path.join(__dirname, 'views')))
+app.use(express.static(path.resolve(path.resolve(), 'public')))
+app.set('views', path.resolve(path.resolve(), 'views'))
+app.set('view engine', 'ejs')
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
+app.use('/api', router)
 
+//посмотреть
+//app.get('/', (req, res) => {
+   // res.sendFile(`${__dirname}/views/index.ejs`);
+//})
 
-
-app.get('/', (req, res) => {
-    res.sendFile(`${__dirname}/views/index.ejs`);
-})
-
-app.get('/test.ejs', (req, res) => {
+app.get('/test', (req, res) => {
     res.render('test.ejs')
 })
 
-app.get('/game.ejs', (req, res) => {
-    res.render('game.ejs')
+//1 способ
+app.get('/RuCuisine', async (req,res)=>{
+    let russian_cuisine = await russian_cuisine_controller.getAll()
+    res.render('RuCuisine', {russian_cuisine:russian_cuisine})
 })
 
-app.get('/AfCuisine.ejs', (req, res) => {
+app.get('/add', (req, res) => {
+    res.render('add')
+})
+
+/*app.get('/game.ejs', (req, res) => {
+ res.render('game.ejs')
+})
+
+app.get('/AfCuisine', (req, res) => {
     res.render('AfCuisine.ejs')
 })
 

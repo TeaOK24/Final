@@ -10,8 +10,8 @@ const { User } = base;
 const generateJwt = (id, email, role) => {
     return jwt.sign(
         { id, email, role },
-        { SECRET_KEY: "random123" },
-        process.config.SECRET_KEY,
+        //{SECRET_KEY: "random123"},
+        config.SECRET_KEY,
         { expiresIn: '24h' }
     )
 }

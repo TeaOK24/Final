@@ -1,27 +1,13 @@
+<!-- 1 способ -->
 <div class="mainfood">
-    <div class="mainfood_card">
-        <h3>Название блюда</h3>
-        <div class="boxPhoto">
-            <img src="" alt="фото блюда">
+    <% russian_cuisine.forEach(function(item) { %>
+        <div class="mainfood_card">
+            <h3><%= item.name %></h3>
+            <div class="boxPhoto">
+                <img src="" alt="фото блюда">
+            </div>
+            <a href="#openModal">Посмотреть рецепт</a>
         </div>
-        <a href="#openModal">Посмотреть рецепт</a>
-    </div>
-    <div class="mainfood_card">
-        <h3>Название блюда</h3>
-        <div class="boxPhoto">
-            <img src="" alt="фото блюда">
-        </div>
-        <a href="#openModal2">Посмотреть рецепт</a>
-    </div>
-    <div class="mainfood_card">
-        <h3>Название блюда</h3>
-        <div class="boxPhoto">
-            <img src="" alt="фото блюда">
-        </div>
-        <a href="#openModal3">Посмотреть рецепт</a>
-    </div>
-   
-
-
+    <% }); %>
 
 </div>

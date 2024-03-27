@@ -4,12 +4,14 @@ const { russian_cuisine } = base;
 
 class russian_cuisine_controller {
     async create(req, res) {
+        console.log("++++++++++++++++++++++++++++++")
         try {
             const { name, ingredients, photo, manual, estimation } = req.body;
-            const check = await russian_cuisine.findOne({ where: { name } })
-            if (check) { return res.json("такое блюдо уже существует") }
+            console.log(name)
+            // const check = await russian_cuisine.findOne({ where: { name } })
+            // if (check) { return res.json("такое блюдо уже существует") }
             const food = await russian_cuisine.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)
@@ -49,6 +51,10 @@ class russian_cuisine_controller {
         catch (e) {
             res.json(e)
         }
+    }
+
+    async getAll (){
+        return await russian_cuisine.findAll()
     }
 }
 

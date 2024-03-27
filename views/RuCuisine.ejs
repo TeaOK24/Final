@@ -15,11 +15,54 @@
 </head>
 
 <body>
+
+
     <%- include('blocks/header') -%>
 
         <%- include('blocks/main') -%>
 
             <%- include('blocks/footer') -%>
+
+                <script>
+                    let search = document.querySelector(".search")
+                    let searchBtn = document.querySelector(".searchBtn")
+                    searchBtn.addEventListener("click", async function () {
+                        let response = await fetch(`/api/russian?name=${search.value}`);
+                        let food = await response.json()
+                        console.log(food.rows)
+                        searchBy(food.rows)
+                    })
+
+                    function searchBy(food) {
+
+                        let mainfood = document.querySelector(".mainfood")
+                        mainfood.innerHTML = ""
+
+                        food.forEach(item => {
+                            let mainfood_card = document.createElement("div")
+                            mainfood_card.classList.add("mainfood_card")
+                            mainfood.append(mainfood_card)
+
+                            let name = document.createElement("h3")
+                            mainfood_card.append(name)
+                            name.innerHTML = item.name
+
+                            let photo = document.createElement("div")
+                            photo.classList.add("boxPhoto")
+                            mainfood_card.append(photo)
+
+                            let img = document.createElement("img")
+                            photo.append(img)
+                            img.setAttribute("src", "")
+
+                            let link = document.createElement("a")
+                            mainfood_card.append(link)
+                            link.innerHTML = "посмотреть рецепт"
+                            link.setAttribute("href", "")
+                        });
+                    }
+
+                </script>
 </body>
 <Script src="JS/Arr.js"></Script>
 <Script src="JS/modal.js"></Script>

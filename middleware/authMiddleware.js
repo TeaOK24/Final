@@ -1,15 +1,17 @@
 import jwt from "jsonwebtoken"
+import config from "../config.js";
 
 function authMuddleware(req, res, next) {
     if (req.method === "OPTIONS") {
         next()
     }
     try{
-        const token = req.headers.authorization.split(' ')[1]
-        if(!token){
+        const isToken = req.headers.authorization
+        if(!isToken){
            return res.status(401).json({massege:"не авторизован"})
         }
-        const decoded = jwt.verify(token, process.config.SECRET_KEY)
+        let token = isToken.split(' ')[1]
+        const decoded = jwt.verify(token, config.SECRET_KEY)
         req.user = decoded
 next()
     }
