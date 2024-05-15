@@ -18,6 +18,10 @@ const russian_cuisine = db.define("russiancuisine", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -41,6 +45,10 @@ const africa_cuisine = db.define("africacuisine", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+    
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -70,6 +78,10 @@ const america_cuisine = db.define("americacuisine", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -93,6 +105,10 @@ const china_cuisine = db.define("chinacuisine", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -122,6 +138,10 @@ const europa_cuisine = db.define("europacuisine", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -145,6 +165,10 @@ const japan_cuisine = db.define("japancuisine", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -174,6 +198,10 @@ const korea_cuisine = db.define("koreacuisine", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -197,6 +225,10 @@ const mexico_cuisine = db.define("mexicocuisine", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -226,6 +258,10 @@ const breadpastries = db.define("breadpastries", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -249,6 +285,10 @@ const salads = db.define("salads", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -278,6 +318,10 @@ const side_dishes = db.define("sidedishes", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -301,6 +345,10 @@ const soups = db.define("soups", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },
@@ -330,6 +378,10 @@ const spicies = db.define("spicies", {
     type: DataTypes.STRING,
 
   },
+  photo_manual: {
+    type: DataTypes.STRING,
+
+  },
   manual: {
     type: DataTypes.STRING,
 
@@ -353,6 +405,10 @@ const vegetarian = db.define("vegetarian", {
     type: DataTypes.STRING,
   },
   photo: {
+    type: DataTypes.STRING,
+
+  },
+  photo_manual: {
     type: DataTypes.STRING,
 
   },

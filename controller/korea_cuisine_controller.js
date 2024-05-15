@@ -50,6 +50,10 @@ class korea_cuisine_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await korea_cuisine.findAll()
+    }
 }
 
 export default new korea_cuisine_controller()

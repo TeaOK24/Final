@@ -50,6 +50,10 @@ class salads_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await salads.findAll()
+    }
 }
 
 export default new salads_controller()

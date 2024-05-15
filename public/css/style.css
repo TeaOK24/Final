@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Gilroy";
-    src: url("fonts/gilroy-lightitalic.ttf") format("truetype");
+    src: url("fonts/Gilroy-Light.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -112,7 +112,7 @@ p {
 
 
 
-.headers{
+.headers {
     font-family: "Gilroy";
     width: 95%;
     height: 250px;
@@ -120,7 +120,7 @@ p {
     margin: 1% 1% 100px 1%;
 }
 
-.headers__blocksFirst{
+.headers__blocksFirst {
     width: 15%;
     height: 200px;
     background-color: white;
@@ -144,6 +144,12 @@ p {
     align-items: center;
 }
 
+.headers__blocksSecond a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+}
+
 .headers__blocksSecond--menu {
     width: 80%;
     margin-left: 1%;
@@ -165,7 +171,7 @@ p {
     position: relative;
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.1vw;
     font-weight: 700;
 }
 
@@ -200,15 +206,51 @@ p {
     display: block;
 }
 
-.boxPhoto {
+.headersSerch__topmenu li:hover .headers-Serch__submenu {
+    display: block;
+}
+
+.headers-Serch__submenu {
+    display: none;
+    background-color: white;
+    top: 140px;
+    display: none;
+    position: absolute;
+    transform: translate(-50% -50%);
+    z-index: 1;
+}
+
+
+
+.mainfood {
+    width: 80%;
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 600px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     position: relative;
-    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0%);
+}
+
+.mainfood_card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.boxPhoto {
     width: 70%;
     height: 50%;
     border: #000 solid 5px;
     border-radius: 5px;
+    background-color: aqua;
+
 
 }
 
@@ -221,35 +263,67 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.mainfood {
-    width: 80%;
-    margin-bottom: 300px;
-    margin-left: 50%;
-    transform: translate(-50%, 0%);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 600px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.mainfood_card {
-    background-color: white;
-}
-
 .mainfood_card h2 {
     margin-top: 20px;
     text-align: center;
 }
 
-.mainfood_card a{
-    position: relative;
-    top: 30%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+.mainfood_card-send{
+    display: flex;
+    flex-direction: row;
+}
+
+.mainfood_card-send form{
+    margin-right: 30px;
 }
 
 
+
+
+/* Форма для отправки блюд*/
+.formAdd {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px 0 30px 0;
+}
+
+.formAdd input {
+    width: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.recipe {
+    height: 100px;
+    width: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+/* Форма для регистрации или авторизации */
+
+
+.formAdd h2{
+    font-size: 1.3rem;
+}
+
+.formAdd a{
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
 
 
 
@@ -266,7 +340,7 @@ p {
 
 .footer {
     width: 98%;
-    height: 250px;
+    height: 150px;
     background-color: rgb(0, 0, 0);
     margin: 1% 1% 1% 1%;
 }

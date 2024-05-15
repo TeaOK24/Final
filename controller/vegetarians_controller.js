@@ -50,6 +50,10 @@ class vegetarians_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await vegetarian.findAll()
+    }
 }
 
 export default new vegetarians_controller()

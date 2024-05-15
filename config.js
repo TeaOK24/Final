@@ -1,5 +1,5 @@
 export default {
-    PORT: 3001,
+    PORT: 3000,
     DB_NAME: "cuisine",
     DB_USER: "root",
     DB_PASSWORD: "",

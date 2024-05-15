@@ -50,6 +50,10 @@ class china_cuisine_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await china_cuisine.findAll()
+    }
 }
 
 export default new china_cuisine_controller()

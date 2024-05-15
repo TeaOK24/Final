@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <%- include('blocks/header') -%>
+
+        <form action="/api/user/login/" method="POST" class="formLog formAdd">
+            <h2>Авторизация</h2>
+            <input type="email" autofocus placeholder="email" name="email" required>
+            <input type="password" placeholder="пароль" name="password" required>
+            <input type="submit" value="войти"> 
+            <a class="now">Еще не зарегестрированы?</a>
+        </form>
+
+        <form action="/api/user/registration/" method="POST" class="formReg formAdd none">
+            <h2>Регистрация</h2>
+            <input type="email" autofocus placeholder="email" name="email" required>
+            <input type="password" placeholder="пароль" name="password" required>
+            <input type="submit" value="зарегистрироваться"> 
+            <a class="nowAgain">Уже зарегестрированы?</a>
+        </form>
+
+
+        <%- include('blocks/footer') -%>
+
+        <script src="/JS/switch.js"></script>
+</body>
+
+</html>

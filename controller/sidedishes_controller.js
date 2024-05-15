@@ -50,6 +50,10 @@ class sidedishes_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await side_dishes.findAll()
+    }
 }
 
 export default new sidedishes_controller()

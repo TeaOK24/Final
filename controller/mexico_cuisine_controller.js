@@ -50,6 +50,10 @@ class mexico_cuisine_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await mexico_cuisine.findAll()
+    }
 }
 
 export default new mexico_cuisine_controller()

@@ -1,4 +1,6 @@
 import base from "../db/base.js";
+import { UUID, UUIDV4 } from "sequelize";
+import path from "path";
 const { russian_cuisine } = base;
 
 
@@ -6,10 +8,21 @@ class russian_cuisine_controller {
     async create(req, res) {
         console.log("++++++++++++++++++++++++++++++")
         try {
-            const { name, ingredients, photo, manual, estimation } = req.body;
+            const { name, ingredients,photo, manual, estimation } = req.body;
             console.log(name)
+
+            // const {photo} = req.files.photo;
+            // let fileName = UUIDV4() + ".jpg"
+            // photo.mv(path.resolve(__dirname, '..', 'static', fileName))
+            // console.log("------------------------------")
+
             // const check = await russian_cuisine.findOne({ where: { name } })
             // if (check) { return res.json("такое блюдо уже существует") }
+
+            //const {photo_manual} = req.files
+            //let fileName = UUID.v4() + ".jpg"
+            //photo_manual.mv(path.resolve(__dirname, '..', 'static', fileName))
+
             const food = await russian_cuisine.create({ name, ingredients, photo, manual, estimation })
             res.redirect("/add")
         }

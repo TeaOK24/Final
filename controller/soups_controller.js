@@ -50,6 +50,10 @@ class soups_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await soups.findAll()
+    }
 }
 
 export default new soups_controller()

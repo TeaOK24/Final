@@ -2,12 +2,75 @@
 <div class="mainfood">
     <% russian_cuisine.forEach(function(item) { %>
         <div class="mainfood_card">
-            <h3><%= item.name %></h3>
+            <h3>
+                <%= item.name %>
+            </h3>
             <div class="boxPhoto">
                 <img src="" alt="фото блюда">
             </div>
-            <a href="#openModal">Посмотреть рецепт</a>
-        </div>
-    <% }); %>
+            <p>Оценка: <%= item.estimation %></p>
+            <div class="mainfood_card-send">
+                <form>
+                    <select action="/api/russian/" name="estimation" method="POST">
+                        <option value="">Выберете оценку</option>
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
 
+                    <input type="submit" value="Отправить"></p>
+                </form>
+                <a href="#openModal">Посмотреть рецепт</a>
+            </div>
+        </div>
+        <% }); %>
+
+</div>
+
+
+
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h3 class="modal-title"></h3>
+                <a href="#close" title="Close" class="close">×</a>
+            </div>
+
+            <div class="modal-body">
+
+
+                <div class="slider">
+                    <% russian_cuisine.forEach(function(item) { %>
+                        <div class="item">
+                            <img src="img/slide1.jpg" alt="Первый слайд">
+                            <p>
+                                <%= item.name %>
+                            </p>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/slide2.jpg" alt="Первый слайд">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/slide3.jpg" alt="Первый слайд">
+                        </div>
+                        <% }); %>
+                            <a class="prev" onclick="minusSlide()">&#10094;</a>
+                            <a class="next" onclick="plusSlide()">&#10095;</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </div>

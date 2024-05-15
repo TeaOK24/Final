@@ -50,6 +50,10 @@ class breadpastries_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await breadpastries.findAll()
+    }
 }
 
 export default new breadpastries_controller()

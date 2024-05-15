@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Страница добавления блюд</title>
 </head>
+
 <body>
-    <form action="/api/russian/" method="POST">
-        <input type="text" autofocus placeholder="введите название блюда" name="name" required>
-        <input type="text"  placeholder="введите рецепт" name="manual" >
-        <input type="submit" value="добавить специальность">
-    </form>
+    <%- include('blocks/header') -%>
+
+        <form action="/api/russian/" method="POST" class="formAdd">
+            <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+            <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+            <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+            <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+            <input type="submit" value="добавить блюдо">
+        </form>
+
+        <%- include('blocks/footer') -%>
 </body>
+
 </html>

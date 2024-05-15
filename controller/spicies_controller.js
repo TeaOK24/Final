@@ -50,6 +50,10 @@ class spicies_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await spicies.findAll()
+    }
 }
 
 export default new spicies_controller()

@@ -50,6 +50,10 @@ class america_cuisine_controller {
             res.json(e)
         }
     }
+
+    async getAll() {
+        return await america_cuisine.findAll()
+    }
 }
 
 export default new america_cuisine_controller()

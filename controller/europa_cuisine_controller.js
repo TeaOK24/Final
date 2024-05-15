@@ -50,6 +50,10 @@ class europa_cuisine_controller {
             res.json(e)
         }
     }
+
+    async getAll (){
+        return await europa_cuisine.findAll()
+    }
 }
 
 export default new europa_cuisine_controller()
