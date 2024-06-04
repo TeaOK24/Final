@@ -11,15 +11,231 @@
 <body>
     <%- include('blocks/header') -%>
 
-        <form action="/api/russian/" method="POST" class="formAdd">
-            <input type="text" autofocus placeholder="введите название блюда" name="name" required>
-            <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
-            <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
-            <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
-            <input type="submit" value="добавить блюдо">
-        </form>
+        <h2>Добавление блюд</h2>
+        <div class="nationale_cusine">
+
+            <div class="nationale_cusine-left">
+                <h3>Список</h3>
+                <ul>
+                    <li><a class="breadPastries_btn">Хлеб и выпечка</a></li>
+                    <li><a class="salads_btn">Салаты</a></li>
+                    <li><a class="side_dishes_btn">Гарниры</a></li>
+                    <li><a class="soups_btn">Супы</a></li>
+                    <li><a class="spicy_btn">Острая кухня</a></li>
+                    <li><a class="vegetarian_btn">Вегетарианские блюда</a></li>
+                </ul>
+            </div>
+
+            <div class="nationale_cusine-right">
+
+                <form action="/api/breadpastries/" method="POST" class="formAdd breadPastries">
+                    <h2>Хлеб и выпечка</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/salads/" method="POST" class="formAdd salads none">
+                    <h2>Салаты</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/sidedishes/" method="POST" class="formAdd side_dishes none">
+                    <h2>Гарниры</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/soups/" method="POST" class="formAdd soups none">
+                    <h2>Супы</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/spicies/" method="POST" class="formAdd spicy none">
+                    <h2>Острая кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/vegetarians/" method="POST" class="formAdd vegetarian none">
+                    <h2>Вегетарианские блюда</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+            </div>
+        </div>
+
+
+        <h2>Добавление национальных блюд</h2>
+        <div class="nationale_cusine">
+
+            <div class="nationale_cusine-left">
+                <h3>Список</h3>
+                <ul>
+                    <li><a class="african_btn">Африкаская кухня</a></li>
+                    <li><a class="american_btn">Американская кухня</a></li>
+                    <li><a class="china_btn">Китайская кухня</a></li>
+                    <li><a class="europa_btn">Европейская кухня</a></li>
+                    <li><a class="japan_btn">Японская кухня</a></li>
+                    <li><a class="korea_btn">Корейская кухня</a></li>
+                    <li><a class="mexico_btn">Мексиканская кухня</a></li>
+                    <li><a class="russian_btn">Русская кухня</a></li>
+                </ul>
+            </div>
+
+            <div class="nationale_cusine-right">
+
+                <form action="/api/africa/" method="POST" class="formAdd african ">
+                    <h2>Африкаская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/america/" method="POST" class="formAdd american none" id="formAdd">
+                    <h2>Американская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/china/" method="POST" class="formAdd china none">
+                    <h2>Китайская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/europa/" method="POST" class="formAdd europa none">
+                    <h2>Европейская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/japan/" method="POST" class="formAdd japan none">
+                    <h2>Японская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/korea/" method="POST" class="formAdd korea none">
+                    <h2>Корейская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/mexico/" method="POST" class="formAdd mexico none">
+                    <h2>Мексиканская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+                <form action="/api/russian/" method="POST" class="formAdd russian none">
+                    <h2>Русская кухня</h2>
+                    <input type="text" autofocus placeholder="введите название блюда" name="name" required>
+                    <textarea type="text" placeholder="введите ингридиенты" name="recipe" class="recipe"></textarea>
+                    <p>Обложка</p>
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <div id="input0"></div>
+                    <input type="button" onclick=addInput() value="+">
+                    <input type="submit" value="добавить блюдо">
+                </form>
+
+            </div>
+        </div>
+
+
+        <h2>Удаление</h2>
+        <div class="nationale_cusine">
+
+            <div class="nationale_cusine-left">
+                <h3>Список</h3>
+                <ul>
+                    <li><a class="breadPastries_btn">Хлеб и выпечка</a></li>
+                    <li><a class="salads_btn">Салаты</a></li>
+                    <li><a class="side_dishes_btn">Гарниры</a></li>
+                    <li><a class="soups_btn">Супы</a></li>
+                    <li><a class="spicy_btn">Острая кухня</a></li>
+                    <li><a class="vegetarian_btn">Вегетарианские блюда</a></li>
+                </ul>
+            </div>
+
+            <div class="nationale_cusine-right">
+
+                <form action="/api/breadpastries/" data-method="delete" class="formAdd delete breadPastries">
+                    <h3>Хлеб и выпечка</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" required>
+
+                    <input type="submit" value="удалить">
+                </form>
+
+
+
+            </div>
+
+            <div class="nationale_cusine-left">
+                <h3>Список</h3>
+                <ul>
+                    <li><a class="african_btn">Африкаская кухня</a></li>
+                    <li><a class="american_btn">Американская кухня</a></li>
+                    <li><a class="china_btn">Китайская кухня</a></li>
+                    <li><a class="europa_btn">Европейская кухня</a></li>
+                    <li><a class="japan_btn">Японская кухня</a></li>
+                    <li><a class="korea_btn">Корейская кухня</a></li>
+                    <li><a class="mexico_btn">Мексиканская кухня</a></li>
+                    <li><a class="russian_btn">Русская кухня</a></li>
+                </ul>
+            </div>
+
+        </div>
 
         <%- include('blocks/footer') -%>
+
+        <script>
+            if(localStorage.getItem("token")){
+                let token = localStorage.getItem("token")
+                console.log(token)
+            }
+        </script>
 </body>
+<script src="/JS/foreach.js"></script>
+<script src="/JS/rae.js"></script>
 
 </html>

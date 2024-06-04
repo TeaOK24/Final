@@ -4,24 +4,30 @@
     width: 100%;
     height: 1500px;
     size: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
 .header__uplogo {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 .header__downlogo {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
     animation-duration: 2s;
     animation-name: slide;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+    z-index: 1;
 }
 
 @keyframes slide {
@@ -35,16 +41,16 @@
 }
 
 .header__foodlogo {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 1;
     opacity: 0;
     animation-delay: 2s;
     animation-duration: 3s;
     animation-name: scaling;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 @keyframes scaling {
@@ -58,29 +64,29 @@
 }
 
 .header__midllelogo {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 1;
     opacity: 0;
     animation-delay: 1s;
     animation-duration: 3s;
     animation-name: scaling;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 .header__eatlogo {
-    top: 55%;
-    left: 50%;
+    top: 50%;
+    left: 53%;
     position: absolute;
     transform: translate(-50%, -50%);
-    z-index: 1;
     opacity: 0;
     animation-delay: 1s;
     animation-duration: 3s;
     animation-name: scaling;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 

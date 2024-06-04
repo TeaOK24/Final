@@ -33,11 +33,11 @@ import ErrorHandlingMiddleware from './middleware/ErrorHandlingMiddleware.js';
 app.use(ErrorHandlingMiddleware)
 
 app.use(express.static(path.resolve(path.resolve(), 'public')))
+app.use(express.static(path.resolve(path.resolve(), 'static')))
 app.set('views', path.resolve(path.resolve(), 'views'))
 app.set('view engine', 'ejs')
 app.use(cors())
 app.use(express.json())
-// app.use(express.static())
 app.use(fileUpload({}))
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', router)
@@ -46,6 +46,10 @@ app.use('/api', router)
 
 app.get('/test', (req, res) => {
     res.render('test.ejs')
+})
+
+app.get('/reg_prom', (req, res) => {
+    res.render('reg_prom.ejs')
 })
 
 app.get('/', (req, res) => {

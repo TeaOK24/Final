@@ -9,7 +9,7 @@ class breadpastries_controller {
             const check = await breadpastries.findOne({ where: { name } })
             if (check) { return res.json("неполучилось добавить") }
             const food = await breadpastries.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)
@@ -38,7 +38,7 @@ class breadpastries_controller {
 
     async delete(req, res) {
         try {
-            const { id } = req.params
+            const { id } = req.body
             const food = await breadpastries.findByPk(id)
             if (!food) {
                 return res.json('такого блюда больше не существует')

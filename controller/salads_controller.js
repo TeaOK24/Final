@@ -9,7 +9,7 @@ class salads_controller {
             const check = await salads.findOne({ where: { name } })
             if (check) { return res.json("неполучилось добавить") }
             const food = await adrica_cuisine.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)

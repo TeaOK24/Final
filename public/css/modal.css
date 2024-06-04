@@ -97,4 +97,22 @@
     flex: 1 1 auto;
     padding: 15px;
     overflow: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 50px;
+    height: 600px;
+    overflow: Scroll;
+}
+
+.modal-body .photo{
+    background-color: aqua;
+    width: 60%;
+}
+
+.modal-body .text{
+    background-color: rgb(221, 0, 255);
+}
+
+.modal-body .text p{
+    word-break:break-all;
 }

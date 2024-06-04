@@ -9,7 +9,7 @@ class vegetarians_controller {
             const check = await vegetarian.findOne({ where: { name } })
             if (check) { return res.json("неполучилось добавить") }
             const food = await vegetarian.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)

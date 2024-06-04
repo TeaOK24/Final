@@ -9,7 +9,7 @@ class china_cuisine_controller {
             const check = await china_cuisine.findOne({ where: { name } })
             if (check) { return res.json("неполучилось добавить") }
             const food = await china_cuisine.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)

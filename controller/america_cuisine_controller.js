@@ -9,7 +9,7 @@ class america_cuisine_controller {
             const check = await america_cuisine.findOne({ where: { name } })
             if (check) { return res.json("неполучилось добавить") }
             const food = await america_cuisine.create({ name, ingredients, photo, manual, estimation })
-            res.json(food)
+            res.redirect("/add")
         }
         catch (e) {
             res.json(e)

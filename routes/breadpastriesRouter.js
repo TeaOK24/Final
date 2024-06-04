@@ -7,7 +7,7 @@ router.post('/',  breadpastries_controller.create)
 
 router.get('/', breadpastries_controller.find)
 
-router.delete('/:id', breadpastries_controller.delete)
+router.delete( breadpastries_controller.delete)
 
 
 

@@ -10,7 +10,6 @@ const { User } = base;
 const generateJwt = (id, email, role) => {
     return jwt.sign(
         { id, email, role },
-        //{SECRET_KEY: "random123"},
         config.SECRET_KEY,
         { expiresIn: '24h' }
     )
@@ -32,8 +31,11 @@ class user_controller {
         const hasPassword = await bcrypt.hash(password, 5)
         const user = await User.create({ email, role, password: hasPassword })
         const token = generateJwt(user.id, user.email, user.role)
-        return res.redirect("/res_log")
-        
+        const data = {
+            token: token
+        }
+        res.render('reg_prom', data)
+
     }
 
     async login(req, res, next) {

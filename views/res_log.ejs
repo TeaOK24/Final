@@ -21,14 +21,15 @@
 
         <form action="/api/user/registration/" method="POST" class="formReg formAdd none">
             <h2>Регистрация</h2>
-            <input type="email" autofocus placeholder="email" name="email" required>
-            <input type="password" placeholder="пароль" name="password" required>
-            <input type="submit" value="зарегистрироваться"> 
-            <a class="nowAgain">Уже зарегестрированы?</a>
+            <input type="email" id="email" autofocus placeholder="email" name="email" required>
+            <input type="password" id="password" placeholder="пароль" name="password" required>
+            <input type="submit"  value="зарегистрироваться">
+            <a class="nowAgain">Уже зарегистрированы?</a>
+
         </form>
 
 
-        <%- include('blocks/footer') -%>
+
 
         <script src="/JS/switch.js"></script>
 </body>

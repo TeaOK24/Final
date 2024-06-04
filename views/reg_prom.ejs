@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .token{
+            display: none;
+        }
+    </style>
+    <title>Блюдо добавлено</title>
+</head>
+<body>
+    <p class="token"><%= token %></p>
+    
+<script>
+    let token = document.querySelector(".token")
+    localStorage.setItem("token", token.innerHTML)
+</script>
+</body>
+</html>
