@@ -17,65 +17,11 @@ const russian_cuisine = db.define("russiancuisine", {
   photo: {
     type: DataTypes.STRING,
   },
-  manual_1: {
+  manual: {
     type: DataTypes.STRING,
   },
-  manual_2: {
-    type: DataTypes.STRING,
-  },
-  manual_3: {
-    type: DataTypes.STRING,
-  },
-  manual_4: {
-    type: DataTypes.STRING,
-  },
-  manual_5: {
-    type: DataTypes.STRING,
-  },
-  manual_6: {
-    type: DataTypes.STRING,
-  },
-  manual_7: {
-    type: DataTypes.STRING,
-  },
-  manual_8: {
-    type: DataTypes.STRING,
-  },
-  manual_9: {
-    type: DataTypes.STRING,
-  },
-  manual_10: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step1: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step2: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step3: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step4: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step5: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step6: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step7: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step8: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step9: {
-    type: DataTypes.STRING,
-  },
-  photo_manual_step10: {
-    type: DataTypes.STRING,
+  photo_manual: {
+    type: DataTypes.JSON,
   },
   estimation: {
     type: DataTypes.FLOAT.UNSIGNED,

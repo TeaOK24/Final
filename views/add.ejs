@@ -162,19 +162,19 @@
                     <h2>Мексиканская кухня</h2>
                     <input type="text" autofocus placeholder="введите название блюда" name="name" required>
                     <textarea type="text" placeholder="введите рецепт" name="manual" class="recipe"></textarea>
-                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo" multiple>
                     <input type="file" accept="image/png, image/jpeg, image/jpg" multiple="true" name="photo_manual">
                     <input type="submit" value="добавить блюдо">
                 </form>
 
-                <form action="/api/russian/" method="POST" class="formAdd russian none">
+                <form action="/api/russian/" method="POST" class="formAdd russian none" enctype="multipart/form-data">
                     <h2>Русская кухня</h2>
                     <input type="text" autofocus placeholder="введите название блюда" name="name" required>
-                    <textarea type="text" placeholder="введите ингридиенты" name="recipe" class="recipe"></textarea>
-                    <p>Обложка</p>
+                    <textarea type="text" placeholder="введите ингридиенты" name="ingredients" class="recipe"></textarea>
+                    <p>Обложка1</p>
                     <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo">
-                    <div id="input0"></div>
-                    <input type="button" onclick=addInput() value="+">
+                    <input type="file" accept="image/png, image/jpeg, image/jpg" name="photo_manual" multiple>
+                    <textarea type="text" placeholder="введите шаги" name="manual" class="recipe"></textarea>
                     <input type="submit" value="добавить блюдо">
                 </form>
 
@@ -188,39 +188,101 @@
             <div class="nationale_cusine-left">
                 <h3>Список</h3>
                 <ul>
-                    <li><a class="breadPastries_btn">Хлеб и выпечка</a></li>
-                    <li><a class="salads_btn">Салаты</a></li>
-                    <li><a class="side_dishes_btn">Гарниры</a></li>
-                    <li><a class="soups_btn">Супы</a></li>
-                    <li><a class="spicy_btn">Острая кухня</a></li>
-                    <li><a class="vegetarian_btn">Вегетарианские блюда</a></li>
+                    <li><a class="breadPastriesDel_btn">Хлеб и выпечка</a></li>
+                    <li><a class="saladsDel_btn">Салаты</a></li>
+                    <li><a class="side_dishesDel_btn">Гарниры</a></li>
+                    <li><a class="soupsDel_btn">Супы</a></li>
+                    <li><a class="spicyDel_btn">Острая кухня</a></li>
+                    <li><a class="vegetarianDel_btn">Вегетарианские блюда</a></li>
                 </ul>
             </div>
 
             <div class="nationale_cusine-right">
 
-                <form action="/api/breadpastries/" data-method="delete" class="formAdd delete breadPastries">
+                <form class="formAdd breadPastriesDel">
                     <h3>Хлеб и выпечка</h3>
-                    <input type="text" autofocus placeholder="введите id блюда" name="name" required>
-
-                    <input type="submit" value="удалить">
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel1()" value="удалить">
                 </form>
-
-
-
+                <form class="formAdd saladsDel none">
+                    <h3>Салаты</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel2()" value="удалить">
+                </form>
+                <form class="formAdd side_dishesDel none">
+                    <h3>Гарниры</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel3()" value="удалить">
+                </form>
+                <form class="formAdd soupsDel none">
+                    <h3>Супы</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel4()" value="удалить">
+                </form>
+                <form class="formAdd spicyDel none">
+                    <h3>Острая кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel5()" value="удалить">
+                </form>
+                </form>
+                <form class="formAdd vegetarianDel none">
+                    <h3>Вегетарианска кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel5()" value="удалить">
+                </form>
+                <form class="formAdd africanDel none">
+                    <h3>Африкаская кухн</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel7()" value="удалить">
+                </form>
+                <form class="formAdd americanDel none">
+                    <h3>Американская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel8()" value="удалить">
+                </form>
+                <form class="formAdd chinaDel none">
+                    <h3>Китайская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel9()" value="удалить">
+                </form>
+                <form class="formAdd europaDel none">
+                    <h3>Европейская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel10()" value="удалить">
+                </form>
+                <form class="formAdd japanDel none">
+                    <h3>Японская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel11()" value="удалить">
+                </form>
+                <form class="formAdd koreaDel none">
+                    <h3>Корейская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel12()" value="удалить">
+                </form>
+                <form class="formAdd mexicoDel none">
+                    <h3>Мексиканская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel13()" value="удалить">
+                </form>
+                <form class="formAdd russianDel none">
+                    <h3>Русская кухня</h3>
+                    <input type="text" autofocus placeholder="введите id блюда" name="name" class="deldel" required>
+                    <input type="submit" onclick="fdel14()" value="удалить">
+                </form>
             </div>
 
             <div class="nationale_cusine-left">
                 <h3>Список</h3>
                 <ul>
-                    <li><a class="african_btn">Африкаская кухня</a></li>
-                    <li><a class="american_btn">Американская кухня</a></li>
-                    <li><a class="china_btn">Китайская кухня</a></li>
-                    <li><a class="europa_btn">Европейская кухня</a></li>
-                    <li><a class="japan_btn">Японская кухня</a></li>
-                    <li><a class="korea_btn">Корейская кухня</a></li>
-                    <li><a class="mexico_btn">Мексиканская кухня</a></li>
-                    <li><a class="russian_btn">Русская кухня</a></li>
+                    <li><a class="africanDel_btn">Африкаская кухня</a></li>
+                    <li><a class="americanDel_btn">Американская кухня</a></li>
+                    <li><a class="chinaDel_btn">Китайская кухня</a></li>
+                    <li><a class="europaDel_btn">Европейская кухня</a></li>
+                    <li><a class="japanDel_btn">Японская кухня</a></li>
+                    <li><a class="koreaDel_btn">Корейская кухня</a></li>
+                    <li><a class="mexicoDel_btn">Мексиканская кухня</a></li>
+                    <li><a class="russianDel_btn">Русская кухня</a></li>
                 </ul>
             </div>
 
@@ -228,14 +290,128 @@
 
         <%- include('blocks/footer') -%>
 
-        <script>
-            if(localStorage.getItem("token")){
-                let token = localStorage.getItem("token")
-                console.log(token)
-            }
-        </script>
+            <script>
+                if (localStorage.getItem("token")) {
+                    let token = localStorage.getItem("token")
+                    console.log(token)
+                }
+                async function fdel1() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/breadpastries/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+
+                async function fdel2() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/salads/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel1() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/sidedishes/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel2() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/soups/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel3() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/spicies/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel4() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/vegetarians/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel5() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/africa/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel6() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/america/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel7() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/china/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel8() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/europa/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel9() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/russian/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel10() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/russian/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel11() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/japan/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel12() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/korea/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel13() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/mexico/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+                async function fdel14() {
+                    const value = document.querySelector(".deldel").value
+                    alert(value)
+                    const response = await fetch(`/api/russian/${value}`, {
+                        method: 'DELETE',
+                    });
+                }
+            </script>
 </body>
 <script src="/JS/foreach.js"></script>
 <script src="/JS/rae.js"></script>
+<script src="/JS/wen.js"></script>
 
 </html>

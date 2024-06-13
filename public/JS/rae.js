@@ -227,3 +227,4 @@ vegetarian_btn.addEventListener('click', function () {
     spicy.classList.add('none');
     vegetarian.classList.toggle('none');
 });
+

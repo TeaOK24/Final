@@ -45,12 +45,15 @@ body {
     }
 }
 
+
+
 a {
     text-decoration: none;
 }
 
 a:hover {
     color: #b5e972;
+    cursor: pointer;
 }
 
 h2 {
@@ -148,7 +151,7 @@ p {
     align-items: center;
 }
 
-.headers__blocksSecond a{
+.headers__blocksSecond a {
     text-decoration: none;
     color: black;
     font-size: 1.1vw;
@@ -271,20 +274,26 @@ p {
     text-align: center;
 }
 
-.mainfood_card p{
+.mainfood_card p {
     font-size: 1.1em;
 }
 
-.mainfood_card a{
+.mainfood_card a {
     font-size: 1.1em;
 }
 
-.mainfood_card-send{
+.mainfood_card-send {
     display: flex;
     flex-direction: row;
 }
 
+.photo img{
+    width: 100%;
+}
 
+/* .ingredients{
+    width: 150px;
+} */
 
 /* Форма для отправки блюд*/
 .formAdd {
@@ -307,7 +316,7 @@ p {
 
 
 
-.formAdd p{
+.formAdd p {
     margin-bottom: 10px;
 }
 
@@ -324,22 +333,22 @@ p {
 /* Форма для регистрации или авторизации */
 
 
-.formAdd h2{
+.formAdd h2 {
     font-size: 1.3rem;
 }
 
-.formAdd a{
+.formAdd a {
     cursor: pointer;
 }
 
-.none{
+.none {
     display: none;
 }
 
 
 
 
-.nationale_cusine{
+.nationale_cusine {
     width: 80%;
     position: relative;
     left: 50%;
@@ -350,7 +359,7 @@ p {
     margin-bottom: 5%;
 }
 
-.nationale_cusine-left{
+.nationale_cusine-left {
     background-color: white;
     width: 30%;
     margin-right: 5%;
@@ -360,18 +369,18 @@ p {
     border-radius: 20px;
 }
 
-.nationale_cusine-left ul{
-   list-style: none;
+.nationale_cusine-left ul {
+    list-style: none;
 }
 
-.nationale_cusine-left li{
+.nationale_cusine-left li {
     cursor: pointer;
     font-size: 1.2em;
     margin-left: 5%;
     margin-top: 5%;
 }
 
-.nationale_cusine-right{
+.nationale_cusine-right {
     width: 50%;
 }
 
@@ -395,4 +404,37 @@ p {
     height: 150px;
     background-color: rgb(0, 0, 0);
     margin: 1% 1% 1% 1%;
+}
+
+
+.port{
+    position: fixed;
+    width: 900px;
+    height: 800px;
+    border: 2px solid rgb(0, 0, 0);
+    overflow: hidden;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.port .btn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.port img{
+    width: 200px;
+    height: 200px;
+}
+
+.port p{
+    float: left;
 }

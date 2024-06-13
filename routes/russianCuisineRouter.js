@@ -4,7 +4,7 @@ import russian_cuisine_controller from "../controller/russian_cuisine_controller
 import checkMiddleware from "../middleware/checkMiddleware.js";
 
 
-router.post('/', checkMiddleware('ADMIN'), russian_cuisine_controller.create)
+router.post('/', russian_cuisine_controller.create)
 
 router.get('/', russian_cuisine_controller.find)
 

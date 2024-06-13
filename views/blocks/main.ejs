@@ -1,6 +1,6 @@
 <!-- 1 способ -->
 <div class="mainfood">
-    <% russian_cuisine.forEach(function(item) { %>
+    <% russian_cuisine.forEach(function(item, index) { %>
         <div class="mainfood_card">
             <h3>
                 <%= item.name %>
@@ -10,7 +10,6 @@
             </div>
             <p>Оценка: <%= item.estimation %>
             </p>
-
             <form>
                 <select action="/api/russian/" name="estimation" method="POST">
                     <option value="">Выберете оценку</option>
@@ -28,11 +27,20 @@
 
                 <input type="submit" value="Отправить"></p>
             </form>
-            <a href="#openModal">Посмотреть рецепт</a>
-
+            <a onclick="about(this)">Посмотреть рецепт</a>
+<div class="port">
+    <div class="btn" onclick="this.parentElement.style.display = 'none'">X</div>
+    <h2><%= item.name %></h2>
+    <p>Ингридиенты: <%= item.ingredients %></p>
+    <p>Рецепт: <%= item.manual %></p>
+               <% var obj = JSON.parse(item.photo_manual)%>
+            <% console.log(index)%>
+            <% obj.forEach(function(key) { %>
+                <img src="<%= key %>" alt="фото блюда">
+            <% }); %>
+</div>
         </div>
         <% }); %>
-
 </div>
 
 
@@ -49,85 +57,110 @@
             </div>
             <div class="modal-body">
 
-                <div class="photo"><img src="">
+                <div class="photo">
                     <img src="" alt="">
                 </div>
-                <div class="text">
-
+                <div class="text ingredients">
                 </div>
 
                 <div class="photo">
-                    <img src="" alt="jop';jkop'">
+                    <img src="" alt="">
                 </div>
                 <div class="text">
                     <p>
+
                     </p>
                 </div>
 
-                <div class="photo"><img src="">
+                <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
-                </div>
-
-                <div class="photo"><img src="">
-                    <img src="" alt="">
-                </div>
-                <div class="text">
-
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
-                </div>
-
-                <div class="photo"><img src="">
-                    <img src="" alt="">
-                </div>
-                <div class="text">
-
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
+                    </p>
                 </div>
 
                 <div class="photo">
                     <img src="" alt="">
                 </div>
                 <div class="text">
+                    <p>
 
+                    </p>
+                </div>
+
+                <div class="photo">
+                    <img src="" alt="">
+                </div>
+                <div class="text">
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="photo">
+                    <img src="" alt="">
+                </div>
+                <div class="text">
+                    <p>
+
+                    </p>
                 </div>
 
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function about(target){
+        // target.nextSiblingElement.style.display = "block"
+        target.parentElement.querySelector(".port").style.display = "block"
+    }
+</script>
